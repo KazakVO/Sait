@@ -1,0 +1,21 @@
+.text,
+input[type="checkbox"] {
+  display: none;
+}
+
+input[type="checkbox"]:checked ~ .text {
+  display: block;
+  font-weight: bold;
+  margin: 10px;
+}
+
+/* Стилизация псевдокнопки */
+.btn {
+  font-weight: bold;
+  display: inline-block;
+  margin-bottom: 4px;
+  padding: 10px 10px;
+  background-color: #ffffff;
+  border: 2px solid #eeeeee;
+  cursor: pointer;
+}
