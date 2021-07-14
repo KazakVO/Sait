@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>сайт</title>
+    <link rel="stylesheet" href="/style2.css">
+</head>
+<body>
+    <header class="header__container container">
+        <div class="header__left">
+            <div class="header__red red">Наши правила</div>
+            <div class="header__green green">Безопасность</div>
+        </div>
+        <div class="header__center">
+            <!-- <div class="header__logo"></div> -->
+            <a class="header__logo" href=""></a>
+        </div>
+        <div class="header__right">
+            <div class="header__blue_container blue">
+                <a href="" class="header__blue">Пользователь</a>
+                <img class="header__blue_ava" src="/img/Mcd.png" alt="">
+            </div>
+            <div class="header__yellow yellow">Спонсорам</div>
+        </div>
+    </header>
+    <div class="body">
+        <div class="body__container">
+            <div class="leftsiterbar">
+                <ul class="leftsitebar__list">
+                    <li class="leftsitebar__list_item">Настройки</li>
+                    <li class="leftsitebar__list_item">Новости</li>
+                    <li class="leftsitebar__list_item">Мой профиль</li>
+                    <li class="leftsitebar__list_item">Мои сообщения</li>
+                    <li class="leftsitebar__list_item">Мои друзья</li>
+                    <li class="leftsitebar__list_item">Мои группы</li>
+                    <li class="leftsitebar__list_item">Противостояния</li>
+                </ul>
+            </div>
+                <div class="news">
+                    <div class="news__add">
+                        <button class="news__add_btn " type="button" onclick="fun__but()">
+                            <img class="header__blue_ava" src="/img/123.png" alt="">
+                            <span class="btn__text">
+                                Добавить пост
+                            </span>
+                        </button>
+                        <div id="postadd" style="display: none">
+                            <div class="my_pad my_pad my_item_marg">
+                                <form>
+                                    <div>
+                                        <textarea cols="50" rows="10" class="forinput_or_textarea">Что у вас нового?</textarea>
+                                    </div>
+                                    <div>
+                                        <button type="submit" class="btn btn-default my_btn_blue">Выложить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            function fun__but() {
+                                var text = document.getElementById("postadd");
+                                if (text.style.display === "none") {
+                                    text.style.display = "block";
+                                }
+                                else {
+                                    text.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+                </div>
+                <div class="rightsitebar">
+                    <ul class="rightsitebar__list">
+                        <li class="rightsitebar__list_item">Фильтры новостей</li>
+                        <li class="rightsitebar__list_item">Все свои</li>
+                        <li class="rightsitebar__list_item">Тематика: забивы</li>
+                        <li class="rightsitebar__list_item">Залайканность</li>
+                        <li class="rightsitebar__list_item">По комементам</li>
+                    </ul>
+                </div>
+        </div>
+
+        <!-- </div> -->
+
+        <!-- <div>
+            <div class="leftsidebar">
+                <ul>
+                    <li>Настройки</li>
+                    <li>Новости</li>
+                    <li>Мой профиль</li>
+                    <li>Мои сообщения</li>
+                    <li>Мои друзья</li>
+                    <li>Мои группы</li>
+                    <li>Противостояния</li>
+                </ul>
+            </div>
+            <div class="content">
+                <div class="news">
+                    <div class="up_span">
+                        <ul>
+                            <li><a>Добавить запись</a></li>
+                            <li><input type="text">Поиск</li>
+                        </ul>
+                    </div>
+                    <div class="news_content"> 
+                        <ul>
+                            <li>
+                                <p>
+                                    <a href="">
+                                        <span>
+                                            <img src="" alt="фото группы">
+                                            Название
+                                        </span>
+                                    </a>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quo excepturi alias, vitae debitis earum quas repellat ducimus id soluta ab iusto velit? Deserunt delectus aliquam, eius vero quidem natus fugiat?   
+
+                                </p>
+                                <span><img src="" alt="лайк"> <i></i>30 <i></i>15</span>
+                                <div>
+                                    Коментарии:
+                                    <span>
+                                        <img src="" alt="фото группы">
+                                        Название
+                                    </span>
+                                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit eos doloremque obcaecati culpa cum possimus perspiciatis beatae porro quidem veritatis rerum, soluta nisi magni consequuntur quasi consequatur odit totam natus?</p>
+                                </div>
+                            </li>
+                            <li>...</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="rigthbar"> -->
+
+                <!-- </div>
+            </div>
+        </div> -->
+     </div> 
+</body>
+</html>
