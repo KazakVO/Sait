@@ -1,11 +1,11 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru">  
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>сайт</title>
-    <link rel="stylesheet" href="/style2.css">
+    <link rel="stylesheet" href="style2.css">
 </head>
 <body>
     <header class="header__container container">
@@ -19,41 +19,49 @@
         </div>
         <div class="header__right">
             <div class="header__blue_container blue">
-                <a href="" class="header__blue">Пользователь</a>
-                <img class="header__blue_ava" src="/img/Mcd.png" alt="">
+                <a href="">
+                    <img class="header__blue_ava" src="img/Mcd.png" alt="">
+                </a>
+                <a href="" class="header__blue">
+                    <span class="header__polzovatel">
+                        Пользователь
+                    </span>
+                    <!-- <img class="header__blue_ava" src="img/Mcd.png" alt="">
+                    <span class="header__polzovatel">Пользователь</span> -->
+                    </a>
             </div>
             <div class="header__yellow yellow">Спонсорам</div>
         </div>
     </header>
-    <div class="body">
+    <div class="body mid_green">
         <div class="body__container">
             <div class="leftsiterbar">
                 <ul class="leftsitebar__list">
-                    <li class="leftsitebar__list_item">Настройки</li>
-                    <li class="leftsitebar__list_item">Новости</li>
-                    <li class="leftsitebar__list_item">Мой профиль</li>
-                    <li class="leftsitebar__list_item">Мои сообщения</li>
-                    <li class="leftsitebar__list_item">Мои друзья</li>
-                    <li class="leftsitebar__list_item">Мои группы</li>
-                    <li class="leftsitebar__list_item">Противостояния</li>
+                    <li class="leftsitebar__list_item mid_green dark_green">Настройки</li>
+                    <li class="leftsitebar__list_item mid_green dark_green">Новости</li>
+                    <li class="leftsitebar__list_item mid_green dark_green">Мой профиль</li>
+                    <li class="leftsitebar__list_item mid_green dark_green">Мои сообщения</li>
+                    <li class="leftsitebar__list_item mid_green dark_green">Мои друзья</li>
+                    <li class="leftsitebar__list_item dark_green">Мои группы</li>
+                    <li class="leftsitebar__list_item dark_green">Противостояния</li>
                 </ul>
             </div>
                 <div class="news">
-                    <div class="news__add">
-                        <button class="news__add_btn " type="button" onclick="fun__but()">
-                            <img class="header__blue_ava" src="/img/123.png" alt="">
+                    <div name="top" class="news__add">
+                        <button class="news__add_btn light_green" type="button" onclick="fun__but()">
+                            <img class="header__blue_ava" src="img/123.png" alt="">
                             <span class="btn__text">
                                 Добавить пост
                             </span>
                         </button>
                         <div id="postadd" style="display: none">
-                            <div class="my_pad my_pad my_item_marg">
+                            <div class="my_pad my_item_marg light_green">
                                 <form>
                                     <div>
-                                        <textarea cols="50" rows="10" class="forinput_or_textarea">Что у вас нового?</textarea>
+                                        <textarea cols="50" rows="10" class="forinput_or_textarea light_green" placeholder="Что у вас нового?"></textarea>
                                     </div>
-                                    <div>
-                                        <button type="submit" class="btn btn-default my_btn_blue">Выложить</button>
+                                    <div class="div_btn">
+                                        <button type="submit" class="btn btn-default my_btn_blue light_green dark_green">Выложить</button>
                                     </div>
                                 </form>
                             </div>
@@ -70,15 +78,341 @@
                             }
                         </script>
                     </div>
+                    <div class="news__post light_green">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                    <ul class="news__post_l_list">
+                                        <li>qwer</li>
+                                        <li>dthdrthf</li>
+                                        <li>gvzdgfzdvdz</li>
+                                    </ul>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                                    <svg class="news__post_k_svg"></svg>
+                                </button>
+                                
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                        <div id="comentadd" style="display: none">
+                            <div class="my_pad light_green">
+                                <div class="news__post_flex">
+                                    <div class="news__post_blok">
+                                        <div>
+                                            <img class="news__post_ava" src="img/123.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="news__post_gryp_name">
+                                            Группа
+                                        </div>
+                                        <div class="news__post_gryp_time">
+                                            4:20
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div>
+                                        <textarea cols="50" rows="10" class="forinput_or_textarea light_green" placeholder="Что у вас нового?"></textarea>
+                                    </div>
+                                    <div class="div_btn">
+                                        <button type="submit" class="btn btn-default my_btn_blue light_green dark_green">Выложить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            function fun__but_com() {
+                                var text = document.getElementById("comentadd");
+                                if (text.style.display === "none") {
+                                    text.style.display = "block";
+                                }
+                                else {
+                                    text.style.display = "none";
+                                }
+                            }
+                        </script>
+                    </div>
+                    <div class="news__post light_green">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <div class="news__post_k_img">
+                                    <svg class="news__post_k_svg"></svg>
+                                </div>
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__post light_green">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <div class="news__post_k_img">
+                                    <svg class="news__post_k_svg"></svg>
+                                </div>
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__post light_green">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <div class="news__post_k_img">
+                                    <svg class="news__post_k_svg"></svg>
+                                </div>
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__post light_green">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <div class="news__post_k_img">
+                                    <svg class="news__post_k_svg"></svg>
+                                </div>
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__post light_green">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <div class="news__post_k_img">
+                                    <svg class="news__post_k_svg"></svg>
+                                </div>
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="rightsitebar">
-                    <ul class="rightsitebar__list">
-                        <li class="rightsitebar__list_item">Фильтры новостей</li>
-                        <li class="rightsitebar__list_item">Все свои</li>
-                        <li class="rightsitebar__list_item">Тематика: забивы</li>
-                        <li class="rightsitebar__list_item">Залайканность</li>
-                        <li class="rightsitebar__list_item">По комементам</li>
-                    </ul>
+
+                <div class="rightsitebar ">
+                    <div class="rightsitebar__container">
+                        <ul class="rightsitebar__list light_green">
+                            <li class="rightsitebar__list_item">Фильтры новостей</li>
+                            <li class="rightsitebar__list_item">Все свои</li>
+                            <li class="rightsitebar__list_item">Тематика: забивы</li>
+                            <li class="rightsitebar__list_item">Залайканность</li>
+                            <li class="rightsitebar__list_item">По комементам</li>
+                        </ul>
+                    </div>
+                    <div class="rightsitebar__link_top_cont">
+                        <a class="rightsitebar__link_top" href="#top">Начало страницы</a>
+                    </div>
                 </div>
         </div>
 
