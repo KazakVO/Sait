@@ -39,6 +39,8 @@ img{
     text-align: center;
 }
 
+input {outline:none;}
+
 /* header */
 
 .header__container{
@@ -294,8 +296,16 @@ img{
     background-color: #C8E6C9;
 }
 
+.mid_green_hover:hover {
+    background-color: #C8E6C9;
+}
+
 .dark_green:hover {
     background: #A5D6A7;
+}
+
+.dark_green_border_bottom{
+    border-bottom: 2px solid #A5D6A7;
 }
 
 .forinput_or_textarea{
