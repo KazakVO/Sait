@@ -12,18 +12,19 @@
     width: 50vh;
     margin-left: 20px;
     margin-right: 20px;
-    height: 91vh;
+    min-height: 88vh;
 
     margin-bottom: 15px;
     border-radius: 12px;
 }
 
-.messages_background{
+.messages__background_top{
     width: 50vh;
-    height: 15px;
-    z-index: 2;
+    height: 10vh;
+    z-index: 1;
     /* position: sticky; */
-    top: 111px;
+    top: 10.3vh;
+    position: fixed;
 }
 
 .messages__top{
@@ -31,15 +32,11 @@
     justify-content: space-between;
     padding-bottom: 5px;
     /* position: sticky; */
-    top: 126px;
-
+    top: 14%;
+    position: fixed;
+    width: 50vh;
     z-index: 3;
-    /* border: 1px solid #E8F5E9; */
-    /* border-radius: 12px; */
-    border-top: 1px solid black; 
-    /* border-top-left-radius: 12px;
-    border-top-right-radius: 12px; */
-    /* border-top-right-radius: 50px;  */
+    border-radius: 12px 12px 0 0;
 }
 
 .messages__top_talker{
@@ -86,14 +83,20 @@
 
 .messages__block{
     /* overflow-y: scroll; */
+    width: 100%;
     min-height: 100px;
+    margin-top: 10vh;
     padding: 10px;
     display: flex;
     flex-direction: column;
     display: inline-block;
+    border-radius: 12px 12px 0 0;
+    flex-flow: row wrap;
+    align-content: flex-start;
+    flex: 1;
 }
 
-.messages__block_m_l{
+/* .messages__block_m_l{
     display: inline-block;
     padding-top: 5px;
     padding-left: 8px;
@@ -126,7 +129,7 @@
     margin-left: 30px;
     flex-direction: column;
     /* justify-content: flex-end; */
-    display: flex;
+    /* display: flex;
     align-items: flex-end;
 }
 
@@ -135,26 +138,112 @@
     display: inline-block;
     padding-top: 2px;
     font-size: 12px;
+} */ 
+
+.message__box_holder{
+    /* display: inline-block; */
+    width: 100%;
+    margin: 0 0 15px;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+
+.message__box{
+    max-width: 90%;
+    padding: 6px 10px;
+    border-radius:  12px 12px 0 12px ;
+    position: relative;
+    /* background: rgba(100, 170, 0, .1); */
+    /* border: 2px solid; */
+    font-size: 14px;
+    align-items: flex-end;
+    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+}
+
+.message__box:after {
+    content: "";
+    position: absolute;
+    /* border: 10px solid transparent;
+    border-top: 10px solid #C8E6C9; */
+    /* border-right: none; */
+    border-right: none;
+    bottom: -22px;
+    /* right: 10px; */
+    right: -2px;
+}
+
+.message__partner{
+    /* align-self: flex-start; */
+    justify-content: flex-start; 
+    display: flex;
+    align-items: flex-start;
+}
+
+
+
+
+.message__partner_box{
+    border-radius:  12px 12px 12px 0;
+    align-items: flex-start;
+}
+
+.message__partner_box:after{
+    right: auto;
+    bottom: -22px;
+    left: -2px;
+    /* border: 10px solid transparent;
+  border-top: 10px solid rgba(100, 170, 0, .2); */
+}
+
+/* .message__partner_box:after{
+    border: 10px solid transparent;
+    border-top: 10px solid rgba(100, 170, 0, .2);
+} */
+
+.messages__block_m_l_t,
+.messages__block_m_l_t_partner{
+    margin-top: 0.6vh;
+    font-size: 12px;
+}
+
+.messages__empty{
+    /* background-color: transparent; */
+    height: 7vh;
 }
 
 .messages__down{
-    width: 640px;
+    width: 50vh;
     display: flex;
     justify-content: space-between;
-    padding-top: 25px;
+    padding-top: 20px;
     padding-bottom: 25px;
     padding-left: 20px;
     padding-right: 20px;
-    position: relative;
-    z-index: 2;
-    position: sticky;
+    /* position: relative; */
+    z-index: 3;
+    /* position: sticky; */
+    top: 90vh;
+    border-radius: 0 0 12px 12px;
     position: fixed;
+
     
     /* top: 50px; */
 }
 
+.messages__down_down{
+    width: 50vh;
+    height: 10vh;
+    top: 97vh;
+    z-index: 2;
+    position: fixed;
+}
+
 .messages__down_textarea{
-    width: 400px;
+    min-width: 110%;
     height: 30px;
 }
 
@@ -166,5 +255,12 @@
 .messages__down_options,
 .messages__down_sent{
     font-size: 20px;
+}
+.messages__down_options{
+    padding-right: 5%;
+}
+
+.messages__down_sent{
+    padding-left: 5%;
 }
 

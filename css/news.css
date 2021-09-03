@@ -1,7 +1,7 @@
 *{
     box-sizing: border-box;
 }
- 
+
 body{
     margin: 0; 
 }
@@ -45,131 +45,7 @@ input {outline:none;}
 
 /* header */
 
-.header__container{
-    display: flex;
-    /* justify-content: space-between; */
-    position: sticky;
-    top: 0;
-    z-index: 1;
-    /* position: fixed; */
-    /* position: relative; */
-}
 
-.header__red,
-.header__green,
-.header__yellow{
-    font-size: 20px;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    display: block;
-}
-
-.header__polzovatel{
-    display: inline-block;
-    font-size: 20px;
-    /* padding-bottom: 15px; */
-}
-
-.header__red,
-.header__green,
-.header__yellow{
-    border-top: 2px solid black ;
-}
-
-.header__red,
-.header__green{
-    padding-right: 300px;
-}
-
-.header__yellow{
-    padding-left: 300px;
-}
-
-.header__blue{
-    margin-left: 10px;
-}
-
-.header__polzovatel{
-    padding-top: 2px;
-    padding-bottom: 3px;
-}
-
-.header__blue_container{
-    padding-top: 1px;
-    padding-left: 250px;
-    display: flex;
-    justify-content: left;
-    align-items: center;
-
-    /* align-items: center; */
-    border-top: 2px solid black ;
-    /* position: relative */
-}
-
-.header__blue_ava{
-    display: inline-block;
-    cursor: pointer;
-    margin-left: 10px;
-    width: 48px;
-    height: 48px;
-    border: 2px solid black;
-    border-radius: 50%;
-}
-
-.header__green,
-.header__yellow{
-    border-bottom: 2px solid black;
-}
-
-.header__left{
-    display: inline-block;
-    border-right: 1px solid black;
-    width: 50%;
-    text-align: right;
-}
-
-.header__right{
-    border-left: 1px solid black;
-    width: 50%;
-    text-align: left;
-}
-
-.red{
-    background-color: rgb(255,135,145);
-}
-
-.green{
-    background-color: rgb(106,255,162);
-}
-
-.blue{
-    background-color: rgb(170,198,255);
-}
-
-.yellow{
-    background-color: rgb(255,249,0);
-}
-
-.header__logo{
-    display: flex;
-    position: absolute;
-    background-image: url('/img/1.png');
-    width: 114px;
-    height: 114px;
-    transform: translate(-50%, -1%);
-    background-repeat: no-repeat;
-    cursor: pointer;
-    transition: 1s ease;
-    background-size: cover;
-}
-
-.header__center{
-    border: 1px solid black;
-}
-
-.header__logo:hover{
-    transform: rotate(180deg) translate(50%, 2%);
-}
 
 /* body */
 
@@ -191,11 +67,6 @@ input {outline:none;}
     /* min-height: 100vh; */
 }
 
-.leftsiterbar{
-    width: 250px;
-    /* height: 200vh; */
-}
-
 .news{
     min-width: 640px;
     max-width: 640px;
@@ -206,30 +77,6 @@ input {outline:none;}
 
 .rightsitebar{
     width: 250px;
-}
-
-.leftsitebar__list{
-    align-items: flex-end;
-    /* margin-left: 300px; */
-    position: sticky;
-    top: 126px;
-    /* z-index: 2; */
-}
-
-.leftsitebar__list_item{
-    text-align: left;
-    padding-left: 10px;
-    padding-top: 9px;
-    font-size: 20px;
-    margin-top: 15px;
-    height: 40px;
-    /* box-shadow: 0 2px 10px rgba(0,0,0,0.22), 0 0 10px rgba(0,0,0,0.22); */
-    transform: scale(1);
-    transition: all 0.2s;
-}
-
-.leftsitebar__list_item:hover{
-    transform: scale(1.05);
 }
 
 .rightsitebar__container{
@@ -288,36 +135,21 @@ input {outline:none;}
     position: relative;
     border-radius: 12px;
 }
+.news__add_post_ava{
+    display: inline-block;
+    cursor: pointer;
+    margin-left: 10px;
+    width: 48px;
+    height: 48px;
+    border: 2px solid black;
+    border-radius: 50%;
+}
 
 .btn__text{
     margin-left: 10px;
     position: absolute;
     top: 50%;
     transform: translate(0, -50%);
-}
-
-.light_green {
-    background-color: #E8F5E9;
-}
-
-.mid_green {
-    background-color: #C8E6C9;
-}
-
-.mid_green_hover:hover {
-    background-color: #C8E6C9;
-}
-
-.dark_green:hover {
-    background: #A5D6A7;
-}
-
-.dark_green_border_bottom{
-    border-bottom: 2px solid #A5D6A7;
-}
-
-.dark_green_border_top{
-    border-top: 2px solid #A5D6A7;
 }
 
 .forinput_or_textarea{
@@ -339,9 +171,9 @@ input {outline:none;}
   
 } */
 
-:focus:-moz-placeholder {
+/* :focus:-moz-placeholder {
     color: transparent
-  }
+  } */
 
 .btn-default{
     border: none;
@@ -381,9 +213,9 @@ input {outline:none;}
 }
 
 .news__post_gryp_name{
- font-size: 20px;
- padding-top: 10px;
- margin-left: 10px;
+    font-size: 20px;
+    padding-top: 10px;
+    margin-left: 10px;
 }
 
 .news__post_gryp_time{

@@ -1,0 +1,115 @@
+/* header */
+
+.header__container{
+  display: flex;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+.header__red,
+.header__green,
+.header__yellow{
+  font-size: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  display: block;
+}
+.header__yellow{
+  padding-bottom: 1.5%;
+}
+.header__polzovatel{
+  display: inline-block;
+  font-size: 20px;
+}
+.header__red,
+.header__green,
+.header__yellow{
+  border-top: 2px solid black ;
+}
+.header__red,
+.header__green{
+  padding-right: 300px;
+}
+.header__yellow{
+  padding-left: 300px;
+}
+.header__blue{
+  margin-left: 10px;
+}
+.header__polzovatel{
+  padding-top: 2px;
+  padding-bottom: 3px;
+}
+.header__blue_container{
+  padding-top: 1px;
+  padding-left: 250px;
+  display: flex;
+  justify-content: left;
+  align-items: center;
+  border-top: 2px solid black ;
+}
+.header__blue_ava{
+  display: inline-block;
+  cursor: pointer;
+  margin-left: 10px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid black;
+  border-radius: 50%;
+}
+.header__green,
+.header__yellow{
+  border-bottom: 2px solid black;
+}
+.header__left{
+  display: inline-block;
+  border-right: 1px solid black;
+  width: 50%;
+  text-align: right;
+}
+.header__right{
+  border-left: 1px solid black;
+  width: 50%;
+  text-align: left;
+}
+.header__logo{
+  display: flex;
+  position: absolute;
+  background-image: url('../img/1.png');
+  width: 114px;
+  height: 114px;
+  transform: translate(-50%, -1%);
+  background-repeat: no-repeat;
+  cursor: pointer;
+  transition: 1s ease;
+  background-size: cover;
+}
+.header__center{
+  border: 1px solid black;
+}
+.header__logo:hover{
+  transform: rotate(180deg) translate(50%, 2%);
+}
+
+/* leftsiterbar */
+.leftsiterbar{
+  width: 250px;
+}
+.leftsitebar__list{
+  align-items: flex-end;
+  position: sticky;
+  top: 126px;
+}
+.leftsitebar__list_item{
+  text-align: left;
+  padding-left: 10px;
+  padding-top: 9px;
+  font-size: 20px;
+  margin-top: 15px;
+  height: 40px;
+  transform: scale(1);
+  transition: all 0.2s;
+}
+.leftsitebar__list_item:hover{
+  transform: scale(1.05);
+}
