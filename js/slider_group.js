@@ -4,7 +4,7 @@ window.addEventListener('DOMContentLoaded', function () {
     // но скрол работает не правильно
     // мультиразрядность должна быть равна 1
     //loop: true,
-    // кол-во дублирующих слайдов
+    // кол-во дублирующих слайдов (привет )))
     //loopedSlides: 3,
     loop: false,
     navigation: {
