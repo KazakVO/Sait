@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login</title>
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/header_leftbar.css">
+  <link rel="stylesheet" href="css/login.css">
+</head>
+
+<body>
+  <header class="header__container container">
+    <div class="header__left">
+      <div class="header__red red">Наши правила</div>
+      <div class="header__green green">Безопасность</div>
+    </div>
+    <div class="header__center">
+      <!-- <div class="header__logo"></div> -->
+      <a class="header__logo" href=""></a>
+    </div>
+    <div class="header__right">
+      <div class="header__blue_container blue">
+        <a href="">
+          <img class="header__blue_ava" src="img/Mcd.png" alt="">
+        </a>
+        <a href="" class="header__blue">
+          <span class="header__polzovatel">
+            Пользователь
+          </span>
+          <!-- <img class="header__blue_ava" src="img/Mcd.png" alt="">
+                      <span class="header__polzovatel">Пользователь</span> -->
+        </a>
+      </div>
+      <div class="header__yellow yellow">Спонсорам</div>
+    </div>
+  </header>
+
+  <div class="registration">
+    <div class="registration__container">
+      <form class="registration-form">
+        <div class="input-wrapper_l">
+          <input type="text" name="email" placeholder="Логин или почта">
+        </div>
+        <div class="input-wrapper_p">
+          <input type="password" id="password" placeholder="Пароль">
+          <div class="input-icon" id="icon" onclick="togglePassword()">
+            <img src="/img/search.svg" alt="">
+          </div>
+        </div>
+        <div class="registration__btn">
+          <button class="registration__btn_in" name="register">Выйти</button>
+        </div>
+      </form>
+      <div class="reg">
+        <a href="#" class="reg_link">Регистрация</a>
+      </div>
+    </div>
+  </div>
+  <script src="js/login.js"></script>
+</body>
+
+</html>
