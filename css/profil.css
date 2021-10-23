@@ -1,0 +1,273 @@
+.profil_left{
+  min-height: 88.9vh;
+  max-width: 640px;
+}
+.profil_left__container{
+  padding-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+}
+.profil_left__name{
+  padding-top: 20px;
+  margin-bottom: 15px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.profil_left__status{
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.profil_left__birthday_info{
+  margin-top: 10px;
+}
+.profil_left__birthday_info,
+.profil_left__city,
+.profil_left__views{
+  display: flex;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+.profil_left__birthday,
+.profil_left__city_city,
+.profil_left__views_views{
+  width: 50%;
+}
+
+.profil_left__container_button{
+  width: 100%;
+}
+.profil_left__btn{
+  background-color: transparent;
+  border: none;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+}
+
+.profil_left__dop{
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.profil_left__dop_list{
+  margin-top: 20px;
+  display: flex;
+}
+.profil_left__dop_list_item:not(:last-child){
+  margin-right: 15px;
+}
+.profil_left__dop_list_item_t_c{
+  text-align: center;
+}
+
+.profil_left__add_f{
+  margin-top: 20px;
+}
+.profil_left__add_foto{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.profil_left__add_foto:hover{
+  font-size: 20px;
+}
+
+.profil_left__news_title{
+  padding-top: 20px;
+  margin-left: 20px;
+}
+.profil_left__news{
+  margin-top: 20px;
+}
+.profil_left__news_btn{
+  width: 100%;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  font-size: 16px;
+  line-height: 20px;
+}
+.profil_left__news_btn:hover{
+  font-size: 20px;
+}
+
+.profil_left__news_news{
+  padding:20px
+}
+
+.profil_left__news_img{
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-image: url('../img/намаз.jpg');
+}
+
+.profil_left__news_dif{
+  margin-top: 20px;
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.profil_left__news_dif_btn{
+  background-color: transparent;
+  border-color: transparent;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+.news__post_profil{
+  border-radius: 0;
+  max-width: 640px;
+  margin-top: 20px;
+}
+
+.news__post_profil_container{
+  margin-bottom: 20px;
+}
+
+.profil_left_dop_infa{
+  display: none;
+}
+.profil_left_dop_infa_active{
+  display: block;
+}
+
+.profil_right{
+  margin-left: 40px;
+  max-width: 280px;
+}
+.profil_right__conteiner_one{
+  margin-top: 22px;
+  padding-bottom: 20px;
+  border-radius: 12px 12px 0 0;
+}
+.profil_right__ava_img{
+  width: 280px;
+  height: 280px;
+  padding: 20px;
+  object-fit: cover;
+  border-radius: 32px;
+}
+.profil_right__ava_btn{
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  width: 100%;
+  padding: 15px;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+.profil_right__lol{
+  display: inline-block;
+  font-size: 16px;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.modal{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.8);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+  transform: scale(0);
+  transition: opacity 0.3s;
+}
+.modal__is_open{
+  opacity: 1;
+  transform: scale(1);
+  z-index: 3;
+}
+.modal__dialog{
+  max-width: 1000px;
+  min-height: 565px;
+  flex-grow:1;
+  display: flex;
+  position: relative;
+  opacity: 0;
+  transform: translateY(-10%);
+  transition: transform 0.2s, opacity 0.2s;
+  transition-delay: 0.2s;
+}
+.modal__is_open > .modal__dialog{
+  opacity: 1;
+  transform: translateY(0);
+}
+.modal__close_btn{
+  position: absolute;
+  right: 0;
+  top: 0;
+  background-color: transparent;
+  border: none;
+  margin-top: 38px;
+  margin-right: 27px;
+  cursor: pointer;
+}
+
+.modal__dialog_container{
+  width: 100%;
+}
+.modal__add_foto_title{
+  width: 100%;
+  text-align: center;
+}
+.modal__add_foto_info{
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+}
+.modal__add_foto_vibrat{
+  margin-top: 30px;
+  text-align: center;
+}
+.custom-file-input::-webkit-file-upload-button {
+  visibility: hidden;
+}
+.custom-file-input::before {
+  content: 'Выберите файл';
+  display: inline-block;
+  width: 235px;
+  text-align: center;
+  background: -webkit-linear-gradient(transparent);
+  /* border: 1px solid #999; */
+  border-radius: 3px;
+  padding: 10px 8px;
+  outline: none;
+  white-space: nowrap;
+  /* -webkit-user-select: none; */
+  cursor: pointer;
+  font-weight: 700;
+  font-size: 10pt;
+}
+
+input[type="file" i]{
+  /* margin-left: 25px; */
+  border: none;
+}
+
+input[type="submit"]{
+  margin-top: 10px;
+  width: 100px;
+  left: -30px;
+  border: none;
+  padding: 10px;
+  background-color: transparent;
+}

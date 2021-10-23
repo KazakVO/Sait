@@ -1,0 +1,727 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Профиль</title>
+  <link rel="stylesheet" href="css/profil.css">
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/colors.css">
+  <link rel="stylesheet" href="css/header_leftbar.css">
+  <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/messages.css">
+  <link rel="stylesheet" href="css/friends.css">
+  <link rel="stylesheet" href="css/groups.css">
+  <link rel="stylesheet" href="css/chats.css">
+</head>
+<body>
+  <header class="header__container container">
+    <div class="header__left">
+        <div class="header__red red">Наши правила</div>
+        <div class="header__green green">Безопасность</div>
+    </div>
+    <div class="header__center">
+        <a class="header__logo" href=""></a>
+    </div>
+    <div class="header__right">
+        <div class="header__blue_container blue">
+            <a href="">
+                <img class="header__blue_ava" src="img/Mcd.png" alt="">
+            </a>
+            <a href="" class="header__blue">
+                <span class="header__polzovatel">
+                    Пользователь
+                </span>
+            </a>
+        </div>
+        <div class="header__yellow yellow">Спонсорам</div>
+    </div>
+</header>
+
+<div class="body mid_blue">
+  <div class="body__container">
+      <div class="leftsiterbar">
+          <ul class="leftsitebar__list">
+              <li class="leftsitebar__list_item dark_blue_hover">Настройки</li>
+              <li class="leftsitebar__list_item dark_blue_hover">Новости</li>
+              <li class="leftsitebar__list_item dark_blue_hover">Мой профиль</li>
+              <li class="leftsitebar__list_item dark_blue_hover">Мои сообщения</li>
+              <li class="leftsitebar__list_item dark_blue_hover">Мои друзья</li>
+              <li class="leftsitebar__list_item dark_blue_hover">Мои группы</li>
+              <li class="leftsitebar__list_item dark_blue_hover">Противостояния</li>
+          </ul>
+      </div>
+      <div class="profil_left">
+        <div class="profil_left__container light_blue">
+          <div class="profil_left__container_top">
+            <h1 class="profil_left__name">Шашлычков Герман</h1>
+            <p class="profil_left__status dark_blue_border_bottom">Люблю лолей и мне не стыдно :)</p>
+            <div class="profil_left__birthday_info">
+              <div class="profil_left__birthday">День рождения</div>
+              <div class="profil_left__birthday_date">04.05.2000</div>
+            </div>
+            <div class="profil_left__city">
+              <div class="profil_left__city_city">Город:</div>
+              <div class="profil_left__city_name">Владикавказ</div>
+            </div>
+            <div class="profil_left__views">
+              <div class="profil_left__views_views">Взгляды:</div>
+              <div class="profil_left__views_name">Косые</div>
+            </div>
+            <div class="profil_left__container_button">
+              <button id="profil_left__btn" class="profil_left__btn mid_blue_hover">Подробно</button>
+            </div>
+            <div id="profil_left_dop_infa" class="profil_left_dop_infa">
+                <div class="profil_left__birthday_info">
+                    <div class="profil_left__birthday">День рождения</div>
+                    <div class="profil_left__birthday_date">04.05.2000</div>
+                </div>
+                <div class="profil_left__city">
+                    <div class="profil_left__city_city">Город:</div>
+                    <div class="profil_left__city_name">Владикавказ</div>
+                </div>
+                <div class="profil_left__views">
+                    <div class="profil_left__views_views">Взгляды:</div>
+                    <div class="profil_left__views_name">Косые</div>
+                </div>
+            </div>
+            <div class="profil_left__dop dark_blue_border_top">
+              <ul class="profil_left__dop_list">
+                <li class="profil_left__dop_list_item">
+                  <div class="profil_left__dop_list_item_t_c">124</div>
+                  <div class="profil_left__dop_list_item_t_c">друга</div>
+                </li>
+                <li class="profil_left__dop_list_item">
+                  <div class="profil_left__dop_list_item_t_c">29</div>
+                  <div class="profil_left__dop_list_item_t_c">групп</div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="profil_left__add_f light_blue">
+          <button class="profil_left__add_foto add_foto">Добавить фото</button>
+        </div>
+        <div class="profil_left__news light_blue">
+          <button class="profil_left__news_btn">Добавить новость</button>
+        </div>
+        <div class="profil_left__news_dif light_blue">
+          <button id="botton1" class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="one">Все записи</button>
+          <button id="botton2"class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="two">Мои записи</button>
+          <button id="botton3"class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="three">Архив записей</button>
+        </div>
+        <div class="news__post_profil_container news__post_profil_container_active" data-target="one">
+            <div class="news__post_profil light_blue">
+                <div class="news__post_flex">
+                    <div class="news__post_blok">
+                        <div>
+                            <img class="news__post_ava" src="img/123.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news__post_gryp_name">
+                            Группа 1
+                        </div>
+                        <div class="news__post_gryp_time">
+                            4:20
+                        </div>
+                    </div>
+                </div>
+                <div class="news__post_p">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus
+                    quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
+                    expedita numquam eum voluptatum aliquam.
+                </div>
+                <div class="news__post_lkr">
+                    <div class="news__post_l">
+                        <div class="news__post_l_img">
+                            <svg class="news__post_l_svg"></svg>
+                            <ul class="news__post_l_list">
+                                <li>qwer</li>
+                                <li>dthdrthf</li>
+                                <li>gvzdgfzdvdz</li>
+                            </ul>
+                        </div>
+                        <div class="news__post_l_all">69</div>
+                        <div class="news__post_l_my">69</div>
+                        <div class="news__post_l_vrag">69</div>
+                    </div>
+                    <div class="news__post_k">
+                        <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                            <svg class="news__post_k_svg"></svg>
+                        </button>
+    
+                        <div class="news__post_k_all">69</div>
+                        <div class="news__post_k_my">69</div>
+                        <div class="news__post_k_vrag">69</div>
+                    </div>
+                    <div class="news__post_r">
+                        <div class="news__post_r_img">
+                            <svg class="news__post_r_svg"></svg>
+                        </div>
+                        <div class="news__post_r_all">69</div>
+                        <div class="news__post_r_my">69</div>
+                        <div class="news__post_r_vrag">69</div>
+                    </div>
+                </div>
+                <div id="comentadd" style="display: none">
+                    <div class="my_pad light_yellow">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div>
+                                <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                    placeholder="Что у вас нового?"></textarea>
+                            </div>
+                            <div class="div_btn">
+                                <button type="submit"
+                                    class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <script>
+                    function fun__but_com() {
+                        var text = document.getElementById("comentadd");
+                        if (text.style.display === "none") {
+                            text.style.display = "block";
+                        }
+                        else {
+                            text.style.display = "none";
+                        }
+                    }
+                </script>
+                </div>
+        </div>
+
+        <div class="news__post_profil_container" data-target="two">
+            <div class="news__post_profil light_blue">
+                <div class="news__post_flex">
+                    <div class="news__post_blok">
+                        <div>
+                            <img class="news__post_ava" src="img/123.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news__post_gryp_name">
+                            Группа 2
+                        </div>
+                        <div class="news__post_gryp_time">
+                            4:20
+                        </div>
+                    </div>
+                </div>
+                <div class="news__post_p">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus
+                    quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
+                    expedita numquam eum voluptatum aliquam.
+                </div>
+                <div class="news__post_lkr">
+                    <div class="news__post_l">
+                        <div class="news__post_l_img">
+                            <svg class="news__post_l_svg"></svg>
+                            <ul class="news__post_l_list">
+                                <li>qwer</li>
+                                <li>dthdrthf</li>
+                                <li>gvzdgfzdvdz</li>
+                            </ul>
+                        </div>
+                        <div class="news__post_l_all">69</div>
+                        <div class="news__post_l_my">69</div>
+                        <div class="news__post_l_vrag">69</div>
+                    </div>
+                    <div class="news__post_k">
+                        <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                            <svg class="news__post_k_svg"></svg>
+                        </button>
+    
+                        <div class="news__post_k_all">69</div>
+                        <div class="news__post_k_my">69</div>
+                        <div class="news__post_k_vrag">69</div>
+                    </div>
+                    <div class="news__post_r">
+                        <div class="news__post_r_img">
+                            <svg class="news__post_r_svg"></svg>
+                        </div>
+                        <div class="news__post_r_all">69</div>
+                        <div class="news__post_r_my">69</div>
+                        <div class="news__post_r_vrag">69</div>
+                    </div>
+                </div>
+                <div id="comentadd" style="display: none">
+                    <div class="my_pad light_yellow">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div>
+                                <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                    placeholder="Что у вас нового?"></textarea>
+                            </div>
+                            <div class="div_btn">
+                                <button type="submit"
+                                    class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <script>
+                    function fun__but_com() {
+                        var text = document.getElementById("comentadd");
+                        if (text.style.display === "none") {
+                            text.style.display = "block";
+                        }
+                        else {
+                            text.style.display = "none";
+                        }
+                    }
+                </script>
+                </div>
+                <div class="news__post_profil light_blue">
+                    <div class="news__post_flex">
+                        <div class="news__post_blok">
+                            <div>
+                                <img class="news__post_ava" src="img/123.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="news__post_gryp_name">
+                                Группа 2
+                            </div>
+                            <div class="news__post_gryp_time">
+                                4:20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__post_p">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus
+                        quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
+                        expedita numquam eum voluptatum aliquam.
+                    </div>
+                    <div class="news__post_lkr">
+                        <div class="news__post_l">
+                            <div class="news__post_l_img">
+                                <svg class="news__post_l_svg"></svg>
+                                <ul class="news__post_l_list">
+                                    <li>qwer</li>
+                                    <li>dthdrthf</li>
+                                    <li>gvzdgfzdvdz</li>
+                                </ul>
+                            </div>
+                            <div class="news__post_l_all">69</div>
+                            <div class="news__post_l_my">69</div>
+                            <div class="news__post_l_vrag">69</div>
+                        </div>
+                        <div class="news__post_k">
+                            <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                                <svg class="news__post_k_svg"></svg>
+                            </button>
+        
+                            <div class="news__post_k_all">69</div>
+                            <div class="news__post_k_my">69</div>
+                            <div class="news__post_k_vrag">69</div>
+                        </div>
+                        <div class="news__post_r">
+                            <div class="news__post_r_img">
+                                <svg class="news__post_r_svg"></svg>
+                            </div>
+                            <div class="news__post_r_all">69</div>
+                            <div class="news__post_r_my">69</div>
+                            <div class="news__post_r_vrag">69</div>
+                        </div>
+                    </div>
+                    <div id="comentadd" style="display: none">
+                        <div class="my_pad light_yellow">
+                            <div class="news__post_flex">
+                                <div class="news__post_blok">
+                                    <div>
+                                        <img class="news__post_ava" src="img/123.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="news__post_gryp_name">
+                                        Группа
+                                    </div>
+                                    <div class="news__post_gryp_time">
+                                        4:20
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <div>
+                                    <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                        placeholder="Что у вас нового?"></textarea>
+                                </div>
+                                <div class="div_btn">
+                                    <button type="submit"
+                                        class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                        function fun__but_com() {
+                            var text = document.getElementById("comentadd");
+                            if (text.style.display === "none") {
+                                text.style.display = "block";
+                            }
+                            else {
+                                text.style.display = "none";
+                            }
+                        }
+                    </script>
+                    </div>
+        </div>
+
+        <div class="news__post_profil_container" data-target="three">
+            <div class="news__post_profil light_blue">
+                <div class="news__post_flex">
+                    <div class="news__post_blok">
+                        <div>
+                            <img class="news__post_ava" src="img/123.png" alt="">
+                        </div>
+                    </div>
+                    <div>
+                        <div class="news__post_gryp_name">
+                            Группа 3
+                        </div>
+                        <div class="news__post_gryp_time">
+                            4:20
+                        </div>
+                    </div>
+                </div>
+                <div class="news__post_p">
+                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus
+                    quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
+                    expedita numquam eum voluptatum aliquam.
+                </div>
+                <div class="news__post_lkr">
+                    <div class="news__post_l">
+                        <div class="news__post_l_img">
+                            <svg class="news__post_l_svg"></svg>
+                            <ul class="news__post_l_list">
+                                <li>qwer</li>
+                                <li>dthdrthf</li>
+                                <li>gvzdgfzdvdz</li>
+                            </ul>
+                        </div>
+                        <div class="news__post_l_all">69</div>
+                        <div class="news__post_l_my">69</div>
+                        <div class="news__post_l_vrag">69</div>
+                    </div>
+                    <div class="news__post_k">
+                        <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                            <svg class="news__post_k_svg"></svg>
+                        </button>
+    
+                        <div class="news__post_k_all">69</div>
+                        <div class="news__post_k_my">69</div>
+                        <div class="news__post_k_vrag">69</div>
+                    </div>
+                    <div class="news__post_r">
+                        <div class="news__post_r_img">
+                            <svg class="news__post_r_svg"></svg>
+                        </div>
+                        <div class="news__post_r_all">69</div>
+                        <div class="news__post_r_my">69</div>
+                        <div class="news__post_r_vrag">69</div>
+                    </div>
+                </div>
+                <div id="comentadd" style="display: none">
+                    <div class="my_pad light_yellow">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <form>
+                            <div>
+                                <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                    placeholder="Что у вас нового?"></textarea>
+                            </div>
+                            <div class="div_btn">
+                                <button type="submit"
+                                    class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <script>
+                    function fun__but_com() {
+                        var text = document.getElementById("comentadd");
+                        if (text.style.display === "none") {
+                            text.style.display = "block";
+                        }
+                        else {
+                            text.style.display = "none";
+                        }
+                    }
+                </script>
+                </div>
+                <div class="news__post_profil light_blue">
+                    <div class="news__post_flex">
+                        <div class="news__post_blok">
+                            <div>
+                                <img class="news__post_ava" src="img/123.png" alt="">
+                            </div>
+                        </div>
+                        <div>
+                            <div class="news__post_gryp_name">
+                                Группа 3
+                            </div>
+                            <div class="news__post_gryp_time">
+                                4:20
+                            </div>
+                        </div>
+                    </div>
+                    <div class="news__post_p">
+                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus
+                        quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
+                        expedita numquam eum voluptatum aliquam.
+                    </div>
+                    <div class="news__post_lkr">
+                        <div class="news__post_l">
+                            <div class="news__post_l_img">
+                                <svg class="news__post_l_svg"></svg>
+                                <ul class="news__post_l_list">
+                                    <li>qwer</li>
+                                    <li>dthdrthf</li>
+                                    <li>gvzdgfzdvdz</li>
+                                </ul>
+                            </div>
+                            <div class="news__post_l_all">69</div>
+                            <div class="news__post_l_my">69</div>
+                            <div class="news__post_l_vrag">69</div>
+                        </div>
+                        <div class="news__post_k">
+                            <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                                <svg class="news__post_k_svg"></svg>
+                            </button>
+        
+                            <div class="news__post_k_all">69</div>
+                            <div class="news__post_k_my">69</div>
+                            <div class="news__post_k_vrag">69</div>
+                        </div>
+                        <div class="news__post_r">
+                            <div class="news__post_r_img">
+                                <svg class="news__post_r_svg"></svg>
+                            </div>
+                            <div class="news__post_r_all">69</div>
+                            <div class="news__post_r_my">69</div>
+                            <div class="news__post_r_vrag">69</div>
+                        </div>
+                    </div>
+                    <div id="comentadd" style="display: none">
+                        <div class="my_pad light_yellow">
+                            <div class="news__post_flex">
+                                <div class="news__post_blok">
+                                    <div>
+                                        <img class="news__post_ava" src="img/123.png" alt="">
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="news__post_gryp_name">
+                                        Группа
+                                    </div>
+                                    <div class="news__post_gryp_time">
+                                        4:20
+                                    </div>
+                                </div>
+                            </div>
+                            <form>
+                                <div>
+                                    <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                        placeholder="Что у вас нового?"></textarea>
+                                </div>
+                                <div class="div_btn">
+                                    <button type="submit"
+                                        class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                    <script>
+                        function fun__but_com() {
+                            var text = document.getElementById("comentadd");
+                            if (text.style.display === "none") {
+                                text.style.display = "block";
+                            }
+                            else {
+                                text.style.display = "none";
+                            }
+                        }
+                    </script>
+                    </div>
+                    <div class="news__post_profil light_blue">
+                        <div class="news__post_flex">
+                            <div class="news__post_blok">
+                                <div>
+                                    <img class="news__post_ava" src="img/123.png" alt="">
+                                </div>
+                            </div>
+                            <div>
+                                <div class="news__post_gryp_name">
+                                    Группа 3
+                                </div>
+                                <div class="news__post_gryp_time">
+                                    4:20
+                                </div>
+                            </div>
+                        </div>
+                        <div class="news__post_p">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia repellendus
+                            quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
+                            expedita numquam eum voluptatum aliquam.
+                        </div>
+                        <div class="news__post_lkr">
+                            <div class="news__post_l">
+                                <div class="news__post_l_img">
+                                    <svg class="news__post_l_svg"></svg>
+                                    <ul class="news__post_l_list">
+                                        <li>qwer</li>
+                                        <li>dthdrthf</li>
+                                        <li>gvzdgfzdvdz</li>
+                                    </ul>
+                                </div>
+                                <div class="news__post_l_all">69</div>
+                                <div class="news__post_l_my">69</div>
+                                <div class="news__post_l_vrag">69</div>
+                            </div>
+                            <div class="news__post_k">
+                                <button class="news__post_k_img" type="button" onclick="fun__but_com()">
+                                    <svg class="news__post_k_svg"></svg>
+                                </button>
+            
+                                <div class="news__post_k_all">69</div>
+                                <div class="news__post_k_my">69</div>
+                                <div class="news__post_k_vrag">69</div>
+                            </div>
+                            <div class="news__post_r">
+                                <div class="news__post_r_img">
+                                    <svg class="news__post_r_svg"></svg>
+                                </div>
+                                <div class="news__post_r_all">69</div>
+                                <div class="news__post_r_my">69</div>
+                                <div class="news__post_r_vrag">69</div>
+                            </div>
+                        </div>
+                        <div id="comentadd" style="display: none">
+                            <div class="my_pad light_yellow">
+                                <div class="news__post_flex">
+                                    <div class="news__post_blok">
+                                        <div>
+                                            <img class="news__post_ava" src="img/123.png" alt="">
+                                        </div>
+                                    </div>
+                                    <div>
+                                        <div class="news__post_gryp_name">
+                                            Группа
+                                        </div>
+                                        <div class="news__post_gryp_time">
+                                            4:20
+                                        </div>
+                                    </div>
+                                </div>
+                                <form>
+                                    <div>
+                                        <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                            placeholder="Что у вас нового?"></textarea>
+                                    </div>
+                                    <div class="div_btn">
+                                        <button type="submit"
+                                            class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                        <script>
+                            function fun__but_com() {
+                                var text = document.getElementById("comentadd");
+                                if (text.style.display === "none") {
+                                    text.style.display = "block";
+                                }
+                                else {
+                                    text.style.display = "none";
+                                }
+                            }
+                        </script>
+                        </div>
+        </div>
+        </div>
+      <div class="profil_right">
+          <div class="profil_right__conteiner_one light_blue">
+              <div class="profil_right__ava">
+                  <img class="profil_right__ava_img" src="img/аниме_фак.jpg" alt="">
+              </div>
+              <button class="profil_right__ava_btn mid_blue_hover">Сменить ебло</button>
+              <a class="profil_right__lol mid_blue_hover" href="">Феминистки</a>
+              <a class="profil_right__lol mid_blue_hover" href="">Вперед</a>
+              <a class="profil_right__lol mid_blue_hover" href="">Мужики</a>
+              <a class="profil_right__lol mid_blue_hover" href="">Сосатб</a>
+              <a class="profil_right__lol mid_blue_hover" href="">НиксельПиксель топ</a>
+          </div>
+      </div>
+  </div>
+</div>
+<div class="modal">
+    <div class="modal__dialog light_blue">
+        <button class="modal__close_btn">
+            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3" />
+              <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3" />
+            </svg>
+        </button>
+        <div class="modal__dialog_container">
+            <h2 class="modal__add_foto_title">Загрузка фото</h2>
+            <p class="modal__add_foto_info">Вы можете выбрать изображение формата jpg, png или gie</p>
+            <div class="modal__add_foto_vibrat">
+                <form onsubmit="return Validate(this);">
+                    <input accept="image/gif, image/jpeg, image/png" type="file" name="my file" class="custom-file-input mid_blue_hover"/><br />
+                <input class="mid_blue_hover" type="submit" value="Submit" />
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="js/profil_tabs.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="js/profil_modal.js"></script>
+</body>
+</html>
