@@ -5,8 +5,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Профиль</title>
-  <link rel="stylesheet" href="css/profil.css">
   <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/profil.css">
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/header_leftbar.css">
   <link rel="stylesheet" href="css/login.css">
@@ -14,30 +14,39 @@
   <link rel="stylesheet" href="css/friends.css">
   <link rel="stylesheet" href="css/groups.css">
   <link rel="stylesheet" href="css/chats.css">
+  <link rel="stylesheet" href="font-awesome/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" href="font-awesome/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="font-awesome/font-awesome/css/v4-shims.min.css">
+  <link
+  rel="stylesheet"
+  href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+/>
+<script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
 <body>
+
   <header class="header__container container">
     <div class="header__left">
-        <div class="header__red red">Наши правила</div>
-        <div class="header__green green">Безопасность</div>
+      <div class="header__red dark_red"></div>
+      <div class="header__green dark_green"></div>
     </div>
     <div class="header__center">
-        <a class="header__logo" href=""></a>
+      <a class="header__logo" href=""></a>
     </div>
     <div class="header__right">
-        <div class="header__blue_container blue">
-            <a href="">
-                <img class="header__blue_ava" src="img/Mcd.png" alt="">
-            </a>
-            <a href="" class="header__blue">
-                <span class="header__polzovatel">
-                    Пользователь
-                </span>
-            </a>
-        </div>
-        <div class="header__yellow yellow">Спонсорам</div>
+      <div class="header__blue dark_blue">
+      </div>
+      <div class="header__yellow dark_yellow"></div>
     </div>
-</header>
+      <a href="#" class="header__blue_ava_link light_blue">
+        <img class="header__blue_ava" src="img/ава.jpg" alt="">
+      </a>
+      <a href="" class="header__blue_aaa light_blue">
+        <span class="header__polzovatel_name">
+          Пользователь
+        </span>
+      </a>
+  </header>
 
 <div class="body mid_blue">
   <div class="body__container">
@@ -56,7 +65,17 @@
         <div class="profil_left__container light_blue">
           <div class="profil_left__container_top">
             <h1 class="profil_left__name">Шашлычков Герман</h1>
-            <p class="profil_left__status dark_blue_border_bottom">Люблю лолей и мне не стыдно :)</p>
+            <p class="profil_left__status dark_blue_border_bottom">Люблю лолей и мне не стыдно :) </p>
+            <div class="kto_na_koord">
+                <div class="kto_na_koord_polich">Поолитические координаты:</div>
+                <div class="kto_na_koord_img_2">
+                  <img class="kto_na_koord_img" src="/img/images.jpg" alt="">
+                  <div class="kto_na_koord_2 background-color_dark_dark_blue">
+                    <img class="kto_na_koord_img_2" src="/img/images.jpg" alt="">
+                    <div class="kto_na_koord_poiasnen_2">Поздравляю, ты Путин!</div>
+                  </div>
+                </div>
+            </div>
             <div class="profil_left__birthday_info">
               <div class="profil_left__birthday">День рождения</div>
               <div class="profil_left__birthday_date">04.05.2000</div>
@@ -70,8 +89,11 @@
               <div class="profil_left__views_name">Косые</div>
             </div>
             <div class="profil_left__container_button">
-              <button id="profil_left__btn" class="profil_left__btn mid_blue_hover">Подробно</button>
+              <button id="profil_left__btn_one" class="profil_left__btn_one profil_left__btn_active mid_blue_hover">Подробно</button>
             </div>
+            <div class="profil_left__container_button">
+                <button id="profil_left__btn_two" class="profil_left__btn_two mid_blue_hover">Скрыть</button>
+              </div>
             <div id="profil_left_dop_infa" class="profil_left_dop_infa">
                 <div class="profil_left__birthday_info">
                     <div class="profil_left__birthday">День рождения</div>
@@ -100,16 +122,36 @@
             </div>
           </div>
         </div>
+
+        <div class="profil_left__all_foto light_blue">
+            <h2 class="profil_left__foto_title">Фотографии 1000-7</h2>
+            <div class="profil_left__all_foto_list">
+                <span class="profil_left__all_foto_f open__foto_1">
+                    <img class="profil_left__all_foto_img" src="/img/ава.jpg" alt="">
+                </span>
+                <span class="profil_left__all_foto_f">
+                    <img class="profil_left__all_foto_img" src="/img/WdcBU4RTx7Y.jpg" alt="">
+                </span>
+                <span class="profil_left__all_foto_f">
+                    <img class="profil_left__all_foto_img" src="/img/oxy_cRmqxcw.jpg" alt="">
+                </span>
+                <span class="profil_left__all_foto_f">
+                    <img class="profil_left__all_foto_img" src="/img/сырок.jpg" alt="">
+                </span>
+            </div>
+        </div>
+
         <div class="profil_left__add_f light_blue">
           <button class="profil_left__add_foto add_foto">Добавить фото</button>
         </div>
+
         <div class="profil_left__news light_blue">
           <button class="profil_left__news_btn">Добавить новость</button>
         </div>
         <div class="profil_left__news_dif light_blue">
           <button id="botton1" class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="one">Все записи</button>
-          <button id="botton2"class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="two">Мои записи</button>
-          <button id="botton3"class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="three">Архив записей</button>
+          <button id="botton2" class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="two">Мои записи</button>
+          <button id="botton3" class="profil_left__news_dif_btn dark_blue_border_bottom_hover" data-path="three">Архив записей</button>
         </div>
         <div class="news__post_profil_container news__post_profil_container_active" data-target="one">
             <div class="news__post_profil light_blue">
@@ -151,7 +193,7 @@
                         <button class="news__post_k_img" type="button" onclick="fun__but_com()">
                             <svg class="news__post_k_svg"></svg>
                         </button>
-    
+
                         <div class="news__post_k_all">69</div>
                         <div class="news__post_k_my">69</div>
                         <div class="news__post_k_vrag">69</div>
@@ -248,7 +290,7 @@
                         <button class="news__post_k_img" type="button" onclick="fun__but_com()">
                             <svg class="news__post_k_svg"></svg>
                         </button>
-    
+
                         <div class="news__post_k_all">69</div>
                         <div class="news__post_k_my">69</div>
                         <div class="news__post_k_vrag">69</div>
@@ -342,7 +384,7 @@
                             <button class="news__post_k_img" type="button" onclick="fun__but_com()">
                                 <svg class="news__post_k_svg"></svg>
                             </button>
-        
+
                             <div class="news__post_k_all">69</div>
                             <div class="news__post_k_my">69</div>
                             <div class="news__post_k_vrag">69</div>
@@ -439,7 +481,7 @@
                         <button class="news__post_k_img" type="button" onclick="fun__but_com()">
                             <svg class="news__post_k_svg"></svg>
                         </button>
-    
+
                         <div class="news__post_k_all">69</div>
                         <div class="news__post_k_my">69</div>
                         <div class="news__post_k_vrag">69</div>
@@ -533,7 +575,7 @@
                             <button class="news__post_k_img" type="button" onclick="fun__but_com()">
                                 <svg class="news__post_k_svg"></svg>
                             </button>
-        
+
                             <div class="news__post_k_all">69</div>
                             <div class="news__post_k_my">69</div>
                             <div class="news__post_k_vrag">69</div>
@@ -627,7 +669,7 @@
                                 <button class="news__post_k_img" type="button" onclick="fun__but_com()">
                                     <svg class="news__post_k_svg"></svg>
                                 </button>
-            
+
                                 <div class="news__post_k_all">69</div>
                                 <div class="news__post_k_my">69</div>
                                 <div class="news__post_k_vrag">69</div>
@@ -687,7 +729,7 @@
       <div class="profil_right">
           <div class="profil_right__conteiner_one light_blue">
               <div class="profil_right__ava">
-                  <img class="profil_right__ava_img" src="img/аниме_фак.jpg" alt="">
+                  <img class="profil_right__ava_img" src="img/ава.jpg" alt="">
               </div>
               <button class="profil_right__ava_btn mid_blue_hover">Сменить ебло</button>
               <a class="profil_right__lol mid_blue_hover" href="">Феминистки</a>
@@ -696,32 +738,414 @@
               <a class="profil_right__lol mid_blue_hover" href="">Сосатб</a>
               <a class="profil_right__lol mid_blue_hover" href="">НиксельПиксель топ</a>
           </div>
+          <div class="rightsitebar__link_top_cont">
+            <a class="rightsitebar__link_top" href="#top">
+              <i class="fas fa-arrow-alt-circle-up fa-2x color_dark_dark_blue" style="margin-bottom: 10px;"></i>
+            </a>
+        </div>
       </div>
   </div>
 </div>
 <div class="modal">
     <div class="modal__dialog light_blue">
         <button class="modal__close_btn">
-            <svg width="28" height="28" viewBox="0 0 28 28" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M2 2L26 26" stroke="#3596F5" stroke-width="3" />
-              <path d="M26 2L2 26" stroke="#3596F5" stroke-width="3" />
-            </svg>
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect x="8.95386" y="7.30435" width="11.6645" height="2.33291" transform="rotate(45 8.95386 7.30435)" fill="rgba(210, 210, 255)"/>
+                <rect x="7.30432" y="15.5524" width="11.6645" height="2.33291" transform="rotate(-45 7.30432 15.5524)" fill="rgba(210, 210, 255)"/>
+                <circle cx="12" cy="12" r="11" stroke="rgba(210, 210, 255)" stroke-width="2"/>
+                </svg>
         </button>
         <div class="modal__dialog_container">
             <h2 class="modal__add_foto_title">Загрузка фото</h2>
             <p class="modal__add_foto_info">Вы можете выбрать изображение формата jpg, png или gie</p>
             <div class="modal__add_foto_vibrat">
                 <form onsubmit="return Validate(this);">
+                    <input accept="image/gif, image/jpeg, image/png" type="file" class="custom-file-input mid_blue_hover" id="files" name="files[]"/><br />
+                    <output id="list"></output>
+                    <input class="mid_blue_hover" type="submit" value="Submit" />
+                    <script>
+                        function handleFileSelect(evt) {
+                            var image = document.getElementById('image');
+
+                            if(image != null)
+                                image.remove();
+
+                            var files = evt.target.files; // FileList object
+
+                            // Loop through the FileList and render image files as thumbnails.
+
+                            var f = files[0];
+
+                            // Only process image files.
+                            if (!f.type.match('image.*')) {
+                                alert("Вы вставили не фотографию:(")
+                                 return;
+                            }
+
+                            var reader = new FileReader();
+
+                            // Closure to capture the file information.
+                            reader.onload = (function(theFile) {
+                                return function(e) {
+                                    // Render thumbnail.
+                                    var div = document.createElement('div');
+                                    div.innerHTML = ['<img class="thumb" id = "image" src="', e.target.result,
+                                        '" title="', theFile.name, '"/>'].join('');
+                                    document.getElementById('list').insertBefore(div, null);
+                                };
+                            })(f);
+
+                            // Read in the image file as a data URL.
+                            reader.readAsDataURL(f);
+                        }
+                        document.getElementById('files').addEventListener('change', handleFileSelect, false);
+                    </script>
+                </form>
+                <!-- <form onsubmit="return Validate(this);">
                     <input accept="image/gif, image/jpeg, image/png" type="file" name="my file" class="custom-file-input mid_blue_hover"/><br />
                 <input class="mid_blue_hover" type="submit" value="Submit" />
-                </form>
+                </form> -->
             </div>
         </div>
     </div>
+</div>
+<div id="modal__foto_one" class="modal_1">
+  <div class="modal__foto_container background-color_dark_dark_blue">
+    <div class="modal__foto_left">
+      <div class="modal__left_container_img">
+        <img class="modal__left_container_img_img" src="img/ава.jpg" alt="">
+      </div>
+      <div class="modal__left_container_dop">
+        <div class="modal__left_dop_infa">Еще</div>
+      </div>
+    </div>
+    <div class="modal__foto_right mid_blue">
+      <div class="foto__right_top background-color_dark_dark_blue">
+        <div class="foto__right_t_l">
+          <a class="foto__right_t_l_link" href="">
+            <img class="foto__right_t_l_img" src="img/ава.jpg" alt="">
+          </a>
+        </div>
+        <div class="foto__right_t_r">
+          <div class="foto__right_t_r_container">
+            <a class="foto__right_t_name" href="" > Имяаыаы Аброгим</a>
+            <div class="foto__right_t_container_img">
+              <img class="foto__right_t_img" src="img/намаз.jpg" alt="">
+            </div>
+          </div>
+          <div class="foto__right_t_date">68 сентября 1939</div>
+        </div>
+        <div class="modal_foto__close">
+          <button id="modal_foto__close" class="modal_foto__close_btn">
+            <i class="fa fa-times fa-2x mid_blue_color" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
+      <div class="modal__foto_right_reactions dark_dark_blue_border_bottom">
+        <button id="profil_modal_foto_btn_one" class="modal__foto_r_r_btn">
+          <i class="fa fa-heart-o color_dark_dark_blue fa-2x" aria-hidden="true"></i>
+        </button>
+        <button id="profil_modal_foto_btn_two" class="modal__foto_r_r_btn heart_none">
+          <i class="fa fa-heart color_dark_dark_blue heart_none fa-2x" aria-hidden="true"></i>
+        </button>
+        <div class="profil_modal_foto_btn_quantity">125</div>
+        <button class="modal__foto_r_r_btn">
+          <i class="fa fa-arrow-circle-o-right color_dark_dark_blue fa-2x" aria-hidden="true"></i>
+        </button>
+        <div class="profil_modal_foto_btn_quantity">746</div>
+        <button class="modal__foto_r_r_btn">
+          <i class="fa fa-comment-o color_dark_dark_blue fa-2x" aria-hidden="true"></i>
+        </button>
+        <div class="profil_modal_foto_btn_quantity">464</div>
+      </div>
+      <div class="modal__foto_right_comment_container background-color_dark_dark_blue_scroll" data-simplebar>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/артем.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Шашлычков Герман</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">26 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/ава.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Коза Виктория</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">27 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Очень жаль, но не очень</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/артем.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Шашлычков Герман</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">26 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/ава.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Коза Виктория</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">27 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Очень жаль, но не очень</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/артем.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Шашлычков Герман</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">26 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/ава.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Коза Виктория</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">27 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Очень жаль, но не очень</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/артем.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Шашлычков Герман</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">26 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+          </div>
+        </div>
+        <div class="modal__foto_right_comment dark_blue_border_bottom">
+          <div class="modal__foto_r_c_l">
+            <a class="comment_ava_link" href="">
+              <img class="comment_link_img" src="img/ава.jpg" alt="">
+            </a>
+          </div>
+          <div class="modal__foto_r_c_r">
+            <div class="comment__name_polit">
+              <a class="comment__name_link" href="">Коза Виктория</a>
+              <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+            </div>
+            <div class="comment__all_infa">
+              <div class="comment__date">27 фев 1947</div>
+              <div class="comment__plus">
+                <i class="fa fa-plus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__minus">
+                <i class="fa fa-minus color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__pencil">
+                <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__heart">
+                <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+              </div>
+              <div class="comment__quantity">5</div>
+            </div>
+            <div class="comment__content">Очень жаль, но не очень</div>
+          </div>
+        </div>
+      </div>
+      <div id="modal__foto_right_my_comment_hyi" class="modal__foto_right_my_comment dark_dark_blue_border_top">
+        <div class="modal__foto_r_m_c_link_ava">
+          <a class="my_comment__ava_link" href="">
+            <img class="my_comment__link_img" src="img/ава.jpg" alt="">
+          </a>
+        </div>
+        <div id="modal__foto_right_my_comment_one" class="my_comment__container color_dark_dark_blue">
+          Оставить комментарий
+        </div>
+      </div>
+      <div id="modal__foto_right_my_comment_two" class="modal__foto_right_my_comment_write dark_dark_blue_border_top">
+        <div class="modal__foto_right_my_comment_write_top mid_blue">
+          <div class="modal__foto_right_my_comment_write_t_l background-color_dark_dark_blue">
+            <div class="my_comment_write_ava">
+              <a class="my_comment_write_ava_link" href="">
+                <img class="my_comment_write_ava_img" src="img/ава.jpg" alt="">
+              </a>
+            </div>
+            <div class="my_comment_write_smile">
+              <i class="fas fa-dizzy mid_blue_color"></i>
+            </div>
+            <div class="my_comment_write_skrepka">
+              <i class="fa fa-paperclip mid_blue_color" aria-hidden="true"></i>
+            </div>
+          </div>
+          <div class="modal__foto_right_my_comment_write_t_r">
+            <div class="modal__foto_right_my_comment_write_t_r_two">
+              <div contenteditable="true" class="my_comment__write_my_comment color_dark_dark_blue" data-simplebar>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal__foto_right_my_comment_write_bottom background-color_dark_dark_blue">
+          <button id="my_comment_write_btn_cancel" class="my_comment_write_btn_cancel mid_blue">Отменить</button>
+          <button class="my_comment_write_btn_send mid_blue">Отправить</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
 <script src="js/profil_tabs.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/profil_modal.js"></script>
+  <script>
+    OpenComForm(modal__foto_right_my_comment_one, modal__foto_right_my_comment_hyi, modal__foto_right_my_comment_two);
+  </script>
 </body>
 </html>

@@ -1,10 +1,6 @@
 .chats{
-    min-width: 640px;
-    max-width: 640px;
-    /* border: 2px solid black; */
-    margin-left: 20px;
-    margin-right: 20px;
-    height: 200vh;
+  width: 550px;
+    height: 97%;
     /* border-radius: 12px; */
 }
 
@@ -25,13 +21,12 @@
 
 .chats__search{
     position: sticky;
-    top: 112px;
     margin-top: 10px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 10px;
-    z-index: 999;
     border-radius: 12px 12px 0 0;
+    top: 62px;
 }
 
 .chats__post{
@@ -41,6 +36,10 @@
     padding-top: 15px;
     padding-bottom: 15px;
     z-index: 888;
+}
+
+.chats__post_link{
+  display: flex;
 }
 
 .chats__post_ava_img{
@@ -65,19 +64,28 @@
 
 .chats__post_name{
     display: inline-block;
-    font-size: 20px;
+    font-size: 14px;
 }
 
 .chats__post_time{
-    font-size: 15px;
+    font-size: 14px;
 }
 
 .chats__post_ava{
     display: inline-block;
+    width: 50px;
+    height: 50px;
+}
+.chats__post_ava2{
+  display: inline-block;
+  width: 25px;
+  height: 25px;
 }
 
 .chats__post_block{
     display: inline-block;
+    width: 450px;
+    margin-left: 10px;
 }
 
 .chats__post_ava2_text{
@@ -86,9 +94,8 @@
 }
 
 .chats__post_text{
-    font-size: 15px;
-    max-width: 500px;
-    min-width: 500px;
+    font-size: 14px;
+    margin-left: 10px;
 }
 
 .chats__post_block_name_time{
@@ -96,6 +103,6 @@
     justify-content: space-between;
 }
 
- 
+
 
 

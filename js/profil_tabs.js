@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
-  
+
   //Пользуемся методом объекта document.
   //querySelectorAll - метод. Позволяет передовать селекторы в формате css и получать DOM элементы, которые соответствуют данным селекторам.
   document.querySelectorAll('.profil_left__news_dif_btn').forEach(function (tabsLink) {
@@ -38,7 +38,46 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById('botton3').classList.add('dark_blue_border_bottom')
   }
 
-  document.getElementById('profil_left__btn').onclick = function(){
-    document.getElementById('profil_left_dop_infa').classList.toggle('profil_left_dop_infa_active')
+  document.getElementById('profil_left__btn_one').onclick = function(){
+    document.getElementById('profil_left_dop_infa').classList.add('profil_left_dop_infa_active')
+    document.getElementById('profil_left__btn_two').classList.add('profil_left__btn_active')
+    document.getElementById('profil_left__btn_one').classList.remove('profil_left__btn_active')
   }
-}) 
+
+  document.getElementById('profil_left__btn_two').onclick = function(){
+    document.getElementById('profil_left_dop_infa').classList.remove('profil_left_dop_infa_active')
+    document.getElementById('profil_left__btn_two').classList.remove('profil_left__btn_active')
+    document.getElementById('profil_left__btn_one').classList.add('profil_left__btn_active')
+  }
+
+  // МЕНЯЕМ ЦВЕТ СЕРДЕЧКАМ
+  document.getElementById('profil_modal_foto_btn_one').onclick = function(){
+    document.getElementById('profil_modal_foto_btn_two').classList.remove('heart_none')
+    document.getElementById('profil_modal_foto_btn_one').classList.add('heart_none')
+  }
+  document.getElementById('profil_modal_foto_btn_two').onclick = function(){
+    document.getElementById('profil_modal_foto_btn_one').classList.remove('heart_none')
+    document.getElementById('profil_modal_foto_btn_two').classList.add('heart_none')
+  }
+
+  // ЗАКРЫВАЕМ ФОРМУ С ФОТО
+  document.getElementById('modal_foto__close').onclick = function(){
+    document.getElementById('modal__foto_one').classList.remove('modal_1__is_open')
+  }
+
+  //ОТКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
+  function OpenComForm(ComOne, ComTwo, ComOld){
+    document.getElementById(ComOne).onclick = function(){
+      document.getElementById(ComOld).classList.add('display_none')
+      document.getElementById(ComTwo).classList.add('modal__foto_right_my_comment_write_active')
+    }
+  }
+  //'modal__foto_right_my_comment_one'
+  //'modal__foto_right_my_comment_hyi'
+  //'modal__foto_right_my_comment_two'
+  // ЗАКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
+  // document.getElementById('my_comment_write_btn_cancel').onclick = function(){
+  //   document.getElementById('modal__foto_right_my_comment_hyi').classList.remove('display_none')
+  //   document.getElementById('modal__foto_right_my_comment_two').classList.remove('modal__foto_right_my_comment_write_active')
+  // }
+})

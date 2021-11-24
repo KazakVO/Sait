@@ -3,7 +3,7 @@ $(document).ready(function () {
 // viewFlatsBtn
   var modal = $('.modal');
   var modalCloseBtn = $('.modal__close_btn');
-  var viewAddFoto = $('.add_foto'); 
+  var viewAddFoto = $('.add_foto');
 
   //при клике на modal__close_btn модальное окно закрывается
   modalCloseBtn.on("click", toggleModal);
@@ -42,4 +42,26 @@ return false;
 
 return true;
 }
+
+  // var modal_1 = $('.modal_1');
+  // var modalCloseBtn_1 = $('.modal__close_btn_1');
+  // var openFoto_1 = $('.open__foto_1');
+
+  // modalCloseBtn_1.on("click", toggleModal);
+  // openFoto_1.on("click", toggleModal);
+  // function toggleModal() {
+  //   modal_1.toggleClass("modal_1__is_open");
+  // };
+
 });
+$(document).ready(function () {
+    var modal_1 = $('.modal_1');
+    var modalCloseBtn_1 = $('.modal__close_btn_1');
+    var openFoto_1 = $('.open__foto_1');
+
+    modalCloseBtn_1.on("click", toggleModal);
+    openFoto_1.on("click", toggleModal);
+    function toggleModal() {
+      modal_1.toggleClass("modal_1__is_open");
+    };
+  });

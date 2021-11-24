@@ -6,35 +6,33 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Login</title>
+  <link rel="stylesheet" href="css/news.css">
+  <link rel="stylesheet" href="css/profil.css">
   <link rel="stylesheet" href="css/colors.css">
   <link rel="stylesheet" href="css/header_leftbar.css">
   <link rel="stylesheet" href="css/login.css">
+  <link rel="stylesheet" href="css/messages.css">
+  <link rel="stylesheet" href="css/friends.css">
+  <link rel="stylesheet" href="css/groups.css">
+  <link rel="stylesheet" href="css/chats.css">
+  <link rel="stylesheet" href="font-awesome/font-awesome/css/fontawesome.css">
+  <link rel="stylesheet" href="font-awesome/font-awesome/css/all.min.css">
+  <link rel="stylesheet" href="font-awesome/font-awesome/css/v4-shims.min.css">
 </head>
 
 <body>
   <header class="header__container container">
     <div class="header__left">
-      <div class="header__red red">Наши правила</div>
-      <div class="header__green green">Безопасность</div>
+      <div class="header__red dark_red"></div>
+      <div class="header__green dark_green"></div>
     </div>
     <div class="header__center">
-      <!-- <div class="header__logo"></div> -->
       <a class="header__logo" href=""></a>
     </div>
     <div class="header__right">
-      <div class="header__blue_container blue">
-        <a href="">
-          <img class="header__blue_ava" src="img/Mcd.png" alt="">
-        </a>
-        <a href="" class="header__blue">
-          <span class="header__polzovatel">
-            Пользователь
-          </span>
-          <!-- <img class="header__blue_ava" src="img/Mcd.png" alt="">
-                      <span class="header__polzovatel">Пользователь</span> -->
-        </a>
+      <div class="header__blue dark_blue">
       </div>
-      <div class="header__yellow yellow">Спонсорам</div>
+      <div class="header__yellow dark_yellow"></div>
     </div>
   </header>
 
@@ -50,13 +48,17 @@
             <img src="/img/search.svg" alt="">
           </div>
         </div>
-        <div class="registration__btn">
-          <button class="registration__btn_in" name="register">Выйти</button>
+        <div class="registration__down">
+          <div class="registration__btn">
+            <button class="registration__btn_in custom-btn btn-6" name="register">
+              <span class="registration__btn_in_sp">Выйти</span>
+            </button>
+          </div>
+          <div class="reg custom-btn btn-6 btn-66">
+            <a href="reg__btn"><span class="registration__btn_in_sp">Регистрация</span></a>
+          </div>
         </div>
       </form>
-      <div class="reg">
-        <a href="#" class="reg_link">Регистрация</a>
-      </div>
     </div>
   </div>
   <script src="js/login.js"></script>
