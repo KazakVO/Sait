@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
 
+
   //Пользуемся методом объекта document.
   //querySelectorAll - метод. Позволяет передовать селекторы в формате css и получать DOM элементы, которые соответствуют данным селекторам.
   document.querySelectorAll('.profil_left__news_dif_btn').forEach(function (tabsLink) {
@@ -64,19 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
   document.getElementById('modal_foto__close').onclick = function(){
     document.getElementById('modal__foto_one').classList.remove('modal_1__is_open')
   }
-
-  //ОТКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
-  // function OpenComForm(ComOne, ComTwo, ComOld){
-  //   document.getElementById(ComOne).onclick = function(){
-  //     document.getElementById(ComOld).classList.add('display_none')
-  //     document.getElementById(ComTwo).classList.add('modal__foto_right_my_comment_write_active')
-  //   }
-  // }
-  // document.getElementById('modal__foto_right_my_comment_one').onclick = function(){
-  //   document.getElementById('modal__foto_right_my_comment_hyi').classList.add('display_none')
-  //   document.getElementById('modal__foto_right_my_comment_two').classList.add('modal__foto_right_my_comment_write_active')
-  // }
-
+  
   //'modal__foto_right_my_comment_one'
   //'modal__foto_right_my_comment_hyi'
   //'modal__foto_right_my_comment_two'
@@ -85,21 +74,15 @@ document.addEventListener('DOMContentLoaded', function () {
   //   document.getElementById('modal__foto_right_my_comment_hyi').classList.remove('display_none')
   //   document.getElementById('modal__foto_right_my_comment_two').classList.remove('modal__foto_right_my_comment_write_active')
   // }
-
 })
-  //ОТКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
-  function OpenComForm(ComTwo, ComOld){
 
-    var cOld = document.getElementById(ComOld);
-    var cTwo = document.getElementById(ComTwo);
 
-    cOld.classList.add('display_none');
-    cTwo.classList.add('modal__foto_right_my_comment_write_active');
-  }
-  // ЗАКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
-  function CloseComForm(ComTwo, ComOld){
-    var cOld = document.getElementById(ComOld);
-    var cTwo = document.getElementById(ComTwo);
-    cOld.classList.remove('display_none')
-    cTwo.classList.remove('modal__foto_right_my_comment_write_active')
-  }
+//ОТКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
+function OpenComForm(ComTwo, ComOld){
+
+  var cOld = document.getElementById(ComOld);
+  var cTwo = document.getElementById(ComTwo);
+
+  cOld.classList.add('display_none');
+  cTwo.classList.add('modal__foto_right_my_comment_write_active');
+}

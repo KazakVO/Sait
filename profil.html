@@ -1106,7 +1106,7 @@
             <img class="my_comment__link_img" src="img/ава.jpg" alt="">
           </a>
         </div>
-        <div id="modal__foto_right_my_comment_one" class="my_comment__container color_dark_dark_blue">
+        <div id="modal__foto_right_my_comment_one" class="my_comment__container color_dark_dark_blue" onclick="OpenComForm('modal__foto_right_my_comment_two', 'modal__foto_right_my_comment_hyi')">
           Оставить комментарий
         </div>
       </div>
@@ -1133,19 +1133,19 @@
           </div>
         </div>
         <div class="modal__foto_right_my_comment_write_bottom background-color_dark_dark_blue">
-          <button id="my_comment_write_btn_cancel" class="my_comment_write_btn_cancel mid_blue">Отменить</button>
+          <button id="my_comment_write_btn_cancel" class="my_comment_write_btn_cancel mid_blue" onclick="CloseComForm('modal__foto_right_my_comment_two', 'modal__foto_right_my_comment_hyi')" >Отменить</button>
           <button class="my_comment_write_btn_send mid_blue">Отправить</button>
         </div>
       </div>
     </div>
   </div>
 </div>
-<script src="js/profil_tabs.js"></script>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="js/profil_modal.js"></script>
-  <script>
+  <script src="js/profil_tabs.js"></script>
+  <!-- <script>
     OpenComForm(modal__foto_right_my_comment_one, modal__foto_right_my_comment_hyi, modal__foto_right_my_comment_two);
-  </script>
+  </script> -->
 </body>
 </html>
