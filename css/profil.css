@@ -292,14 +292,21 @@
   /* background-color:rgba(0, 0, 0, 0.7); */
   margin-top: 17%;
 }
+.modal__foto_all_el{
+  display: flex;
+}
 .modal__foto_left{
   width: 500px;
 }
 .modal__left_container_img{
-  margin: 4%;
+  display:flex;
+  margin: auto;
   width: 450px;
-  height: 450px;
+  height: 490px;
   border-radius: 12px;
+  justify-content: center; /*центрируем элемент по горизонтали */
+  align-items: center; /* и вертикали */
+  overflow: hidden;
 }
 .modal__left_container_img_img{
   border-radius: 12px;
@@ -392,9 +399,91 @@
 }
 .profil_modal_foto_btn_quantity{
   font-size: 16px;
-  line-height: 32px;
+  line-height: 30px;
   margin-right: 15px;
 }
+.modal__foto_r_r_btn_circle{
+  cursor: pointer;
+}
+.modal__foto_r_r_btn_circle:hover{
+  line-height: 28px;
+}
+.circle__tooltop{
+  position: absolute;
+  transition: display .3s ease-in-out;
+  right: 0;
+  z-index: 15;
+  border-radius: 12px;
+  top: 99px;
+  min-width: 250px;
+  max-width: 350px;
+  padding: 10px;
+  display: none;
+}
+.circle__tooltop_active{
+  display: block;
+}
+.circle__tooltip_comtainer{
+  display: flex;
+  padding-bottom: 2px;
+  margin-top: 2px;
+}
+.circle__tooltip_link{
+  padding-bottom: 2px;
+}
+.circle__tooltip_comtainer:hover,
+.circle__tooltip_link:hover{
+  padding-bottom: 0px;
+}
+
+.circle__tooltip_r_c_l{
+  width: 40px;
+  height: 40px;
+  margin-right: 5px;
+}
+.circle__ava_link{
+  width: 40px;
+  height: 40px;
+}
+.circle__link_img{
+  width: 36px;
+  height: 36px;
+  border: 1px solid black;
+  border-radius: 50px;
+}
+.circle__name_polit{
+  display: flex;
+}
+.circle__name_link{
+  font-size: 14px;
+  margin-top: 10px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  color: white;
+}
+.circle__polit_img{
+  width: 22px;
+  height: 22px;
+  margin-top: 6px;
+}
+.circle__tooltip_title{
+  font-size: 14px;
+  color: white;
+  margin-bottom: 13px;
+  text-align: center;
+}
+circle__tooltip_link_c{
+  text-align: center;
+  padding-top: 3px;
+}
+.circle__tooltip_link{
+  display: block;
+  padding-top: 13px;
+  font-size: 14px;
+  color: white;
+  text-align: center;
+}
+
 
 /* МОДАЛЬНОЕ ОКНО, ПРАВЫЙ БЛОК, КОМЕНТ */
 
@@ -406,15 +495,19 @@
   padding-left: 5px;
   padding-top: 5px;
   padding-bottom: 5px;
+  padding-right: 10px;
 }
 .modal__foto_r_c_l{
   width: 40px;
   height: 40px;
+  margin-right: 5px;
+}
+.modal__foto_r_c_r{
+  width: 190px;
 }
 .comment_ava_link{
   width: 40px;
   height: 40px;
-  margin-right: 5px;
 }
 .comment_link_img{
   width: 36px;
@@ -439,15 +532,20 @@
 .comment__all_infa{
   display: flex;
   margin-bottom: 8px;
+  justify-content: space-between;
 }
 .comment__date{
-  font-size: 14px;
+  font-size: 12px;
   margin-right: 10px;
+}
+.comment__icons{
+  display: flex;
 }
 .comment__plus,
 .comment__minus,
 .comment__pencil,
-.comment__heart{
+.comment__heart,
+.comment__heart_bac{
   margin-right: 7px;
   cursor: pointer;
 }
@@ -456,7 +554,6 @@
   font-size: 14px;
   word-wrap: break-word;
 }
-
 /* МОДАЛЬНОЕ ОКНО, ПРАВЫЙ БЛОК, МОЙ КОМЕНТ */
 
 .modal__foto_right_my_comment{
@@ -691,4 +788,98 @@ input[type="submit"]{
 }
 .display_none{
   display: none;
+}
+
+/* МОЙ ЛЮБИМЫЙ СЛАЙДЕР <3 */
+/* .mySlides {display: none}; */
+.mySlides {display: none};
+.slideshow-container{
+  position: relative;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  right: 77.8%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 39.6%;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: 1}
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .prev, .next,.text {font-size: 11px}
 }

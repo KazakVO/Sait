@@ -51,18 +51,22 @@ document.addEventListener('DOMContentLoaded', function () {
   }
 
   // МЕНЯЕМ ЦВЕТ СЕРДЕЧКАМ
-  document.getElementById('profil_modal_foto_btn_one').onclick = function(){
-    document.getElementById('profil_modal_foto_btn_two').classList.remove('heart_none')
-    document.getElementById('profil_modal_foto_btn_one').classList.add('heart_none')
-  }
-  document.getElementById('profil_modal_foto_btn_two').onclick = function(){
-    document.getElementById('profil_modal_foto_btn_one').classList.remove('heart_none')
-    document.getElementById('profil_modal_foto_btn_two').classList.add('heart_none')
-  }
+  // document.getElementById('profil_modal_foto_btn_one').onclick = function(){
+  //   document.getElementById('profil_modal_foto_btn_two').classList.remove('heart_none')
+  //   document.getElementById('profil_modal_foto_btn_one').classList.add('heart_none')
+  // }
+  // document.getElementById('profil_modal_foto_btn_two').onclick = function(){
+  //   document.getElementById('profil_modal_foto_btn_one').classList.remove('heart_none')
+  //   document.getElementById('profil_modal_foto_btn_two').classList.add('heart_none')
+  // }
 
   // ЗАКРЫВАЕМ ФОРМУ С ФОТО
   document.getElementById('modal_foto__close').onclick = function(){
     document.getElementById('modal__foto_one').classList.remove('modal_1__is_open')
+  }
+  // ОТКРЫВАЕМ СПИСОК РЕПОСТНУВШИХ
+  document.getElementById('modal__foto_r_r_btn_circle').onclick = function(){
+    document.getElementById('circle__tooltop').classList.toggle('circle__tooltop_active')
   }
 
   //ОТКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
@@ -102,4 +106,31 @@ document.addEventListener('DOMContentLoaded', function () {
     var cTwo = document.getElementById(ComTwo);
     cOld.classList.remove('display_none')
     cTwo.classList.remove('modal__foto_right_my_comment_write_active')
+  }
+
+  //суицид
+  function DeleteCom(c){
+    var child = document.getElementById(c);
+    child.remove();
+  }
+
+  // МЕНЯЕМ ЦВЕТ СЕРДЕЧКАМ
+function LikePlus(one, two, num){
+
+  document.getElementById(two).classList.remove('heart_none');
+  document.getElementById(one).classList.add('heart_none');
+
+  var number = parseInt(document.getElementById(num).innerHTML);
+  number++;
+  document.getElementById(num).innerHTML = number;
+
+  }
+
+  function LikeMinus(one, two, num){
+  document.getElementById(one).classList.remove('heart_none');
+  document.getElementById(two).classList.add('heart_none');
+
+  var number = parseInt(document.getElementById(num).innerHTML);
+  number--;
+  document.getElementById(num).innerHTML = number;
   }
