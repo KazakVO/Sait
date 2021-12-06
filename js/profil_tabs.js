@@ -134,3 +134,10 @@ function LikePlus(one, two, num){
   number--;
   document.getElementById(num).innerHTML = number;
   }
+
+  // ОТКРЫВАЕМ И ЗАКРЫВАЕМ РЕПОСТЫ
+
+function ShowReps(id){
+  var reps = document.getElementById(id);
+  reps.classList.toggle('circle__tooltop_active');
+  }

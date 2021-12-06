@@ -30,6 +30,12 @@ img{
     width: 100%;
 }
 
+button{
+    background-color: transparent;
+    border: transparent;
+    cursor: pointer;
+}
+
 .container{
     /* max-width: 1920px; */
     margin-left: auto;
@@ -235,102 +241,7 @@ input {outline:none;}
     margin: 10px;
 }
 
-.news__post_lkr,
-.news__post_l,
-.news__post_k,
-.news__post_r{
-    display: flex;
-}
-.news__post_l,
-.news__post_k,
-.news__post_r{
-  width: 150px;
-}
-.news__post_k{
-  margin-left: 135px;
-}
 
-.news__post_l_svg{
-    background-image: url('/img/Creative_commons_25px_version.svg');
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    margin-left: 10px;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.news__post_l_all,
-.news__post_l_my,
-.news__post_l_vrag,
-.news__post_k_all,
-.news__post_k_my,
-.news__post_k_vrag,
-.news__post_r_all,
-.news__post_r_my,
-.news__post_r_vrag{
-    margin-top: 5px;
-    font-size: 14px;
-    cursor: pointer;
-}
-
-.news__post_l_all,
-.news__post_l_my,
-.news__post_k_all,
-.news__post_k_my,
-.news__post_r_all,
-.news__post_r_my{
-    margin-right: 5px;
-}
-
-.news__post_l_vrag,
-.news__post_k_vrag,
-.news__post_r_vrag{
-    margin-right: 20px;
-}
-
-.news__post_k_img{
-    background-color: transparent;
-    width: 40px;
-    border: transparent;
-    cursor: pointer;
-    /* margin-left: 195px; */
-}
-
-
-.news__post_k_svg{
-    background-image: url('/img/Creative_commons_25px_version.svg');
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-    /* margin-left: 300px; */
-}
-
-.news__post_r_svg{
-    background-image: url('/img/Creative_commons_25px_version.svg');
-    background-repeat: no-repeat;
-    width: 25px;
-    height: 25px;
-    margin-right: 5px;
-    cursor: pointer;
-}
-
-.news__post_l_list{
-    position: absolute;
-    transform: translate(-30px, -80px);
-    width: 15%;
-    padding: 5px;
-    color: white;
-    background: rgba(0, 0, 0, 0.85);
-    list-style: none;
-    margin-top: 10px;
-    -webkit-box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.1);
-    display: none;
-    z-index: 999;
-    border-radius: 5px;
-}
 
 .fa_news__post_l_list{
     position: absolute;
@@ -360,4 +271,32 @@ input {outline:none;}
 
 .news__post_p{
   font-size: 14px;
+}
+
+/* Пост */
+
+.news__post_lkr,
+.news__post_l,
+.news__post_r,
+.news__post_c{
+    display: flex;
+    justify-content: space-between;
+}
+
+.news__col_like_all,
+.news__col_like_ally,
+.news__col_like_enemy,
+.news__col_rep_all,
+.news__col_rep_ally,
+.news__col_rep_enemy,
+.news__col_com_all,
+.news__col_com_ally,
+.news__col_com_enemy{
+    margin-right: 6px;
+}
+
+.news__post_l_img,
+.news__post_r_img,
+.news__post_c_img{
+    margin-right: 5px;
 }

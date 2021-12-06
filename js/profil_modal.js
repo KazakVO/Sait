@@ -54,14 +54,14 @@ return true;
   // };
 
 });
-$(document).ready(function () {
-    var modal_1 = $('.modal_1');
-    var modalCloseBtn_1 = $('.modal__close_btn_1');
-    var openFoto_1 = $('.open__foto_1');
+// $(document).ready(function () {
+//     var modal_1 = $('.modal_1');
+//     var modalCloseBtn_1 = $('.modal__close_btn_1');
+//     var openFoto_1 = $('.open__foto_1');
 
-    modalCloseBtn_1.on("click", toggleModal);
-    openFoto_1.on("click", toggleModal);
-    function toggleModal() {
-      modal_1.toggleClass("modal_1__is_open");
-    };
-  });
+//     modalCloseBtn_1.on("click", toggleModal);
+//     openFoto_1.on("click", toggleModal);
+//     function toggleModal() {
+//       modal_1.toggleClass("modal_1__is_open");
+//     };
+//   });

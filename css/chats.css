@@ -96,6 +96,7 @@
 .chats__post_text{
     font-size: 14px;
     margin-left: 10px;
+    width: 400px;
 }
 
 .chats__post_block_name_time{

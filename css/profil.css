@@ -4,11 +4,13 @@
   height: 97%;
 }
 .profil_left__container{
+  margin-top: 20px;
   padding-bottom: 20px;
   border-radius: 12px 12px 0 0;
 }
 .profil_left__name{
-  padding-top: 20px;
+  margin-top: 0px;
+  padding-top: 10px;
   margin-bottom: 15px;
   margin-left: 20px;
   margin-right: 20px;
@@ -802,22 +804,20 @@ input[type="submit"]{
   cursor: pointer;
   position: absolute;
   top: 50%;
-  right: 77.8%;
   width: auto;
   padding: 16px;
   margin-top: -22px;
   color: white;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 30px;
   transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
+  border-radius: 12px 0 0 12px;
   user-select: none;
 }
 
 /* Position the "next button" to the right */
 .next {
-  right: 39.6%;
-  border-radius: 3px 0 0 3px;
+  border-radius: 0 12px 12px 0;
 }
 
 /* On hover, add a black background color with a little bit see-through */
@@ -882,4 +882,68 @@ input[type="submit"]{
 /* On smaller screens, decrease text size */
 @media only screen and (max-width: 300px) {
   .prev, .next,.text {font-size: 11px}
+}
+
+@media (min-width:1080px){
+  .prev{
+    left: 118px;
+  }
+  
+  .next {
+    right: 118px;
+  }
+}
+@media (min-width:1280px){
+  .prev{
+    left: 218px;
+  }
+  
+  .next {
+    right: 218px;
+  }
+}
+@media (min-width:1388px){
+  .prev{
+    left: 272px;
+  }
+  
+  .next {
+    right: 272px;
+  }
+}
+@media (min-width:1480px){
+  .prev{
+    left: 318px;
+  }
+  
+  .next {
+    right: 317px;
+  }
+}
+@media (min-width:1680px){
+  .prev{
+    left: 418px;
+  }
+  
+  .next {
+    right: 417px;
+  }
+}
+@media (min-width:1920px){
+  .prev{
+    left: 538px;
+  }
+  
+  .next {
+    right: 537px;
+  }
+}
+@media (min-width:2560px){
+  .prev{
+    left: 858px;
+  }
+  
+  .next {
+    right: 857px;
+  }
 }

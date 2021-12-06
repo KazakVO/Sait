@@ -1,9 +1,9 @@
 var Index = 1;
 
-showSlides(Index);
+//showSlides(Index);
 
 function plusSlides() {
-  showSlides(Index+1);
+  showSlides(parseInt(Index)+1);
 }
 
 function minusSlides() {
@@ -12,6 +12,14 @@ function minusSlides() {
 
 function currentSlide() {
   showSlides(Index);
+}
+
+function formShow(id){
+  var modal_1 = $('.modal_1');
+
+  modal_1.toggleClass("modal_1__is_open");
+
+  showSlides(id);
 }
 
 function showSlides(n) {
@@ -35,3 +43,10 @@ function showSlides(n) {
 
   normSlide.style.display = "block";
 }
+
+function closeForm(){
+
+  var modal_1 = $('.modal_1');
+
+  modal_1.toggleClass("modal_1__is_open");
+} 
