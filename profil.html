@@ -126,16 +126,16 @@
           <div class="profil_left__all_foto light_blue">
               <h2 class="profil_left__foto_title">Фотографии 1000-7</h2>
               <div class="profil_left__all_foto_list">
-                  <span class="profil_left__all_foto_f open__foto_1">
+                  <span class="profil_left__all_foto_f open__foto_1" onclick="formShow('1')">
                       <img class="profil_left__all_foto_img" src="img/ава.jpg" alt="">
                   </span>
-                  <span class="profil_left__all_foto_f" onclick="showSlides('2')">
+                  <span class="profil_left__all_foto_f open__foto_1" onclick="formShow('2')">
                       <img class="profil_left__all_foto_img" src="img/WdcBU4RTx7Y.jpg" alt="">
                   </span>
-                  <span class="profil_left__all_foto_f">
+                  <span class="profil_left__all_foto_f open__foto_1" onclick="formShow('3')">
                       <img class="profil_left__all_foto_img" src="img/oxy_cRmqxcw.jpg" alt="">
                   </span>
-                  <span class="profil_left__all_foto_f">
+                  <span class="profil_left__all_foto_f open__foto_1" onclick="formShow('4')">
                       <img class="profil_left__all_foto_img" src="img/сырок.jpg" alt="">
                   </span>
               </div>
@@ -813,25 +813,8 @@
     <div class="modal__foto_container background-color_dark_dark_blue mySlides fade" id="1">
       <div class="modal__foto_all_el">
         <div class="modal__foto_left">
-
           <div class="modal__left_container_img">
             <img class="modal__left_container_img_img" src="img/ава.jpg" alt="">
-            <!-- <div class="mySlides fade" id="1">
-              <div class="numbertext">1 / 3</div>
-              <img src="img/ава.jpg" style="width:100%">
-              <div class="text">Caption Text</div>
-            </div> -->
-            <!-- <div class="mySlides fade" id="2">
-              <div class="numbertext">2 / 3</div>
-              <img src="img/сырок.jpg" style="width:100%">
-              <div class="text">Caption Two</div>
-            </div>
-            <div class="mySlides fade" id="3">
-              <div class="numbertext">3 / 3</div>
-              <img src="img/аниме_фак.jpg" style="width:100%">
-              <div class="text">Caption Three</div>
-            </div> -->
-          <!-- </div> -->
           </div>
           <div class="modal__left_container_dop">
             <div class="modal__left_dop_infa">Еще</div>
@@ -854,7 +837,7 @@
               <div class="foto__right_t_date">68 сентября 1939</div>
             </div>
             <div class="modal_foto__close">
-              <button id="modal_foto__close" class="modal_foto__close_btn">
+              <button id="modal_foto__close1" class="modal_foto__close_btn" onclick="closeForm()">
                 <i class="fa fa-times fa-2x mid_blue_color" aria-hidden="true"></i>
               </button>
             </div>
@@ -870,9 +853,9 @@
             <button class="modal__foto_r_r_btn">
               <i class="fa fa-arrow-circle-o-right color_dark_dark_blue fa-2x" aria-hidden="true"></i>
             </button>
-            <div id="modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover">746</div>
-            <div id="circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
-                <div class="circle__tooltip_title">Список репостов</div>
+            <div id="1_modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover" onclick="ShowReps('1_circle__tooltop')">746</div>
+              <div id="1_circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
+              <div class="circle__tooltip_title">Список репостов</div>
                 <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
                   <div class="circle__tooltip_r_c_l">
                     <a class="circle__ava_link" href="">
@@ -1175,7 +1158,7 @@
       <div class="modal__foto_all_el">
         <div class="modal__foto_left">
           <div class="modal__left_container_img">
-            <img class="modal__left_container_img_img" src="img/намаз.jpg" alt="">
+            <img class="modal__left_container_img_img" src="img/WdcBU4RTx7Y.jpg" alt="">
           </div>
           <div class="modal__left_container_dop">
             <div class="modal__left_dop_infa">Еще</div>
@@ -1198,7 +1181,7 @@
               <div class="foto__right_t_date">25 апреля 2000</div>
             </div>
             <div class="modal_foto__close">
-              <button id="2modal_foto__close" class="modal_foto__close_btn">
+              <button id="2modal_foto__close" class="modal_foto__close_btn" onclick="closeForm()">
                 <i class="fa fa-times fa-2x mid_blue_color" aria-hidden="true"></i>
               </button>
             </div>
@@ -1214,8 +1197,8 @@
             <button class="modal__foto_r_r_btn">
               <i class="fa fa-arrow-circle-o-right color_dark_dark_blue fa-2x" aria-hidden="true"></i>
             </button>
-            <div id="2modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover">746</div>
-            <div id="2circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
+            <div id="2_modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover" onclick="ShowReps('2_circle__tooltop')">746</div>
+            <div id="2_circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
                 <div class="circle__tooltip_title">Список репостов</div>
                 <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
                   <div class="circle__tooltip_r_c_l">
@@ -1519,7 +1502,7 @@
       <div class="modal__foto_all_el">
         <div class="modal__foto_left">
           <div class="modal__left_container_img">
-            <img class="modal__left_container_img_img" src="img/огромный котик.jpg" alt="">
+            <img class="modal__left_container_img_img" src="img/oxy_cRmqxcw.jpg" alt="">
           </div>
           <div class="modal__left_container_dop">
             <div class="modal__left_dop_infa">Еще</div>
@@ -1542,7 +1525,7 @@
               <div class="foto__right_t_date">25 апреля 2000</div>
             </div>
             <div class="modal_foto__close">
-              <button id="3modal_foto__close" class="modal_foto__close_btn">
+              <button id="3modal_foto__close" class="modal_foto__close_btn" onclick="closeForm()">
                 <i class="fa fa-times fa-2x mid_blue_color" aria-hidden="true"></i>
               </button>
             </div>
@@ -1558,8 +1541,8 @@
             <button class="modal__foto_r_r_btn">
               <i class="fa fa-arrow-circle-o-right color_dark_dark_blue fa-2x" aria-hidden="true"></i>
             </button>
-            <div id="3modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover">746</div>
-            <div id="3circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
+            <div id="3_modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover" onclick="ShowReps('3_circle__tooltop')">746</div>
+            <div id="3_circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
                 <div class="circle__tooltip_title">Список репостов</div>
                 <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
                   <div class="circle__tooltip_r_c_l">
@@ -1859,8 +1842,352 @@
         </div>
       </div>
     </div>
-    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
-    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    <div class="modal__foto_container background-color_dark_dark_blue mySlides fade" id="4">
+      <div class="modal__foto_all_el">
+        <div class="modal__foto_left">
+          <div class="modal__left_container_img">
+            <img class="modal__left_container_img_img" src="img/сырок.jpg" alt="">
+          </div>
+          <div class="modal__left_container_dop">
+            <div class="modal__left_dop_infa">Еще</div>
+          </div>
+        </div>
+        <div class="modal__foto_right mid_blue">
+          <div class="foto__right_top background-color_dark_dark_blue">
+            <div class="foto__right_t_l">
+              <a class="foto__right_t_l_link" href="">
+                <img class="foto__right_t_l_img" src="img/намаз.jpg" alt="">
+              </a>
+            </div>
+            <div class="foto__right_t_r">
+              <div class="foto__right_t_r_container">
+                <a class="foto__right_t_name" href="" > Мухамед Иванович</a>
+                <div class="foto__right_t_container_img">
+                  <img class="foto__right_t_img" src="img/намаз.jpg" alt="">
+                </div>
+              </div>
+              <div class="foto__right_t_date">25 апреля 2000</div>
+            </div>
+            <div class="modal_foto__close">
+              <button id="4modal_foto__close" class="modal_foto__close_btn" onclick="closeForm()">
+                <i class="fa fa-times fa-2x mid_blue_color" aria-hidden="true"></i>
+              </button>
+            </div>
+          </div>
+          <div class="modal__foto_right_reactions dark_dark_blue_border_bottom">
+            <button id="4mainLike1" class="modal__foto_r_r_btn" onclick="LikePlus('4mainLike1', '4mainLike2', '4LikeNum')">
+              <i class="fa fa-heart-o color_dark_dark_blue fa-2x" aria-hidden="true"></i>
+              </button>
+              <button id="4mainLike2" class="modal__foto_r_r_btn heart_none" onclick="LikeMinus('4mainLike1', '4mainLike2', '4LikeNum')">
+              <i class="fa fa-heart color_dark_dark_blue heart_none fa-2x" aria-hidden="true"></i>
+              </button>
+              <div class="profil_modal_foto_btn_quantity" id="4LikeNum">125</div>
+            <button class="modal__foto_r_r_btn">
+              <i class="fa fa-arrow-circle-o-right color_dark_dark_blue fa-2x" aria-hidden="true"></i>
+            </button>
+            <div id="4_modal__foto_r_r_btn_circle" class="profil_modal_foto_btn_quantity modal__foto_r_r_btn_circle dark_dark_blue_border_bottom_hover" onclick="ShowReps('4_circle__tooltop')">746</div>
+            <div id="4_circle__tooltop" class="circle__tooltop background-color_dark_dark_blue">
+                <div class="circle__tooltip_title">Список репостов</div>
+                <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
+                  <div class="circle__tooltip_r_c_l">
+                    <a class="circle__ava_link" href="">
+                      <img class="circle__link_img" src="img/артем.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="circle__name_polit">
+                    <a class="circle__name_link" href="">Шашлычков Герман</a>
+                    <img class="circle__polit_img" src="img/намаз.jpg" alt="">
+                  </div>
+                </div>
+                <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
+                  <div class="circle__tooltip_r_c_l">
+                    <a class="circle__ava_link" href="">
+                      <img class="circle__link_img" src="img/артем.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="circle__name_polit">
+                    <a class="circle__name_link" href="">Шашлычков Германия</a>
+                    <img class="circle__polit_img" src="img/намаз.jpg" alt="">
+                  </div>
+                </div>
+                <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
+                  <div class="circle__tooltip_r_c_l">
+                    <a class="circle__ava_link" href="">
+                      <img class="circle__link_img" src="img/артем.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="circle__name_polit">
+                    <a class="circle__name_link" href="">Шашлычков Герман</a>
+                    <img class="circle__polit_img" src="img/намаз.jpg" alt="">
+                  </div>
+                </div>
+                <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
+                  <div class="circle__tooltip_r_c_l">
+                    <a class="circle__ava_link" href="">
+                      <img class="circle__link_img" src="img/артем.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="circle__name_polit">
+                    <a class="circle__name_link" href="">Шашлычков Герман</a>
+                    <img class="circle__polit_img" src="img/намаз.jpg" alt="">
+                  </div>
+                </div>
+                <div class="circle__tooltip_comtainer mid_blue_border_bottom_hover">
+                  <div class="circle__tooltip_r_c_l">
+                    <a class="circle__ava_link" href="">
+                      <img class="circle__link_img" src="img/артем.jpg" alt="">
+                    </a>
+                  </div>
+                  <div class="circle__name_polit">
+                    <a class="circle__name_link" href="">Шашлычков Герман</a>
+                    <img class="circle__polit_img" src="img/намаз.jpg" alt="">
+                  </div>
+                </div>
+                <div class="circle__tooltip_link_c">
+                  <a class="circle__tooltip_link mid_blue_border_bottom_hover" href="">А можно всех посмотреть?</a>
+                </div>
+            </div>
+            <button class="modal__foto_r_r_btn">
+              <i class="fa fa-comments-o color_dark_dark_blue fa-2x" aria-hidden="true"></i>
+            </button>
+            <div class="profil_modal_foto_btn_quantity">464</div>
+          </div>
+          <div class="modal__foto_right_comment_container background-color_dark_dark_blue_scroll" data-simplebar id="4coms">
+            <div class="modal__foto_right_comment dark_blue_border_bottom" id="4com1">
+              <div class="modal__foto_r_c_l">
+                <a class="comment_ava_link" href="">
+                  <img class="comment_link_img" src="img/артем.jpg" alt="">
+                </a>
+              </div>
+              <div class="modal__foto_r_c_r">
+                <div class="comment__name_polit">
+                  <a class="comment__name_link" href="">Шашлычков Герман</a>
+                  <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+                </div>
+                <div class="comment__all_infa">
+                  <div class="comment__date">26 фев 1947</div>
+                  <div class="comment__icons">
+                    <div class="comment__plus">
+                      <i class="fa fa-commenting-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com1_like_on" onclick="LikePlus('4com1_like_on', '4com1_like_off', '4com1_like_num')" class="comment__heart">
+                      <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com1_like_off" onclick="LikeMinus('4com1_like_on', '4com1_like_off', '4com1_like_num')" class="comment__heart_bac heart_none">
+                      <i class="fa fa-heart color_dark_dark_blue heart_none" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com1_like_num" class="comment__quantity">5</div>
+                  </div>
+                </div>
+                <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+              </div>
+            </div>
+            <div class="modal__foto_right_comment dark_blue_border_bottom" id="4com2">
+              <div class="modal__foto_r_c_l">
+                <a class="comment_ava_link" href="">
+                  <img class="comment_link_img" src="img/ава.jpg" alt="">
+                </a>
+              </div>
+              <div class="modal__foto_r_c_r">
+                <div class="comment__name_polit">
+                  <a class="comment__name_link" href="">Коза Виктория</a>
+                  <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+                </div>
+                <div class="comment__all_infa">
+                  <div class="comment__date">27 фев 1947</div>
+                  <div class="comment__icons">
+                    <div class="comment__pencil">
+                      <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="comment__minus" onclick="DeleteCom('4com2')">
+                      <i class="fa fa-trash-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="comment__plus">
+                      <i class="fa fa-commenting-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com2_like_on" onclick="LikePlus('4com2_like_on', '4com2_like_off', '4com2_like_num')" class="comment__heart">
+                      <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com2_like_off" onclick="LikeMinus('4com2_like_on', '4com2_like_off', '4com2_like_num')" class="comment__heart_bac heart_none">
+                      <i class="fa fa-heart color_dark_dark_blue heart_none" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com2_like_num" class="comment__quantity">56</div>
+                  </div>
+                  </div>
+                <div class="comment__content">Очень жаль, но не очень</div>
+              </div>
+            </div>
+            <div class="modal__foto_right_comment dark_blue_border_bottom" id="4com3">
+              <div class="modal__foto_r_c_l">
+                <a class="comment_ava_link" href="">
+                  <img class="comment_link_img" src="img/артем.jpg" alt="">
+                </a>
+              </div>
+              <div class="modal__foto_r_c_r">
+                <div class="comment__name_polit">
+                  <a class="comment__name_link" href="">Шашлычков Герман</a>
+                  <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+                </div>
+                <div class="comment__all_infa">
+                  <div class="comment__date">26 фев 1947</div>
+                  <div class="comment__icons">
+                    <div class="comment__plus">
+                      <i class="fa fa-commenting-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com3_like_on" onclick="LikePlus('4com3_like_on', '4com3_like_off', '4com3_like_num')" class="comment__heart">
+                      <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com3_like_off" onclick="LikeMinus('4com3_like_on', '4com3_like_off', '4com3_like_num')" class="comment__heart_bac heart_none">
+                      <i class="fa fa-heart color_dark_dark_blue heart_none" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com3_like_num" class="comment__quantity">73</div>
+                  </div>
+                </div>
+                <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+              </div>
+            </div>
+            <div class="modal__foto_right_comment dark_blue_border_bottom" id="4com4">
+              <div class="modal__foto_r_c_l">
+                <a class="comment_ava_link" href="">
+                  <img class="comment_link_img" src="img/ава.jpg" alt="">
+                </a>
+              </div>
+              <div class="modal__foto_r_c_r">
+                <div class="comment__name_polit">
+                  <a class="comment__name_link" href="">Коза Виктория</a>
+                  <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+                </div>
+                <div class="comment__all_infa">
+                  <div class="comment__date">27 фев 1947</div>
+                  <div class="comment__icons">
+                    <div class="comment__pencil">
+                      <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="comment__minus" onclick="DeleteCom('4com4')">
+                      <i class="fa fa-trash-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="comment__plus">
+                      <i class="fa fa-commenting-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com4_like_on" onclick="LikePlus('4com4_like_on', '4com4_like_off', '4com4_like_num')" class="comment__heart">
+                      <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com4_like_off" onclick="LikeMinus('4com4_like_on', '4com4_like_off', '4com4_like_num')" class="comment__heart_bac heart_none">
+                      <i class="fa fa-heart color_dark_dark_blue heart_none" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com4_like_num" class="comment__quantity">5</div>
+                  </div>
+                  </div>
+                <div class="comment__content">Очень жаль, но не очень</div>
+              </div>
+            </div>
+            <div class="modal__foto_right_comment dark_blue_border_bottom" id="4com5">
+              <div class="modal__foto_r_c_l">
+                <a class="comment_ava_link" href="">
+                  <img class="comment_link_img" src="img/артем.jpg" alt="">
+                </a>
+              </div>
+              <div class="modal__foto_r_c_r">
+                <div class="comment__name_polit">
+                  <a class="comment__name_link" href="">Шашлычков Герман</a>
+                  <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+                </div>
+                <div class="comment__all_infa">
+                  <div class="comment__date">26 фев 1947</div>
+                  <div class="comment__icons">
+                    <div class="comment__plus">
+                      <i class="fa fa-commenting-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com5_like_on" onclick="LikePlus('4com5_like_on', '4com5_like_off', '4com5_like_num')" class="comment__heart">
+                      <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com5_like_off" onclick="LikeMinus('4com5_like_on', '4com5_like_off', '4com5_like_num')" class="comment__heart_bac heart_none">
+                      <i class="fa fa-heart color_dark_dark_blue heart_none" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com5_like_num" class="comment__quantity">5</div>
+                  </div>
+                </div>
+                <div class="comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол</div>
+              </div>
+            </div>
+            <div class="modal__foto_right_comment dark_blue_border_bottom" id="4com6">
+              <div class="modal__foto_r_c_l">
+                <a class="comment_ava_link" href="">
+                  <img class="comment_link_img" src="img/ава.jpg" alt="">
+                </a>
+              </div>
+              <div class="modal__foto_r_c_r">
+                <div class="comment__name_polit">
+                  <a class="comment__name_link" href="">Коза Виктория</a>
+                  <img class="comment__polit_img" src="img/намаз.jpg" alt="">
+                </div>
+                <div class="comment__all_infa">
+                  <div class="comment__date">27 фев 1947</div>
+                  <div class="comment__icons">
+                    <div class="comment__pencil">
+                      <i class="fa fa-pencil color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="comment__minus" onclick="DeleteCom('4com6')">
+                      <i class="fa fa-trash-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div class="comment__plus">
+                      <i class="fa fa-commenting-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com6_like_on" onclick="LikePlus('4com6_like_on', '4com6_like_off', '4com6_like_num')" class="comment__heart">
+                      <i class="fa fa-heart-o color_dark_dark_blue" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com6_like_off" onclick="LikeMinus('4com6_like_on', '4com6_like_off', '4com6_like_num')" class="comment__heart_bac heart_none">
+                      <i class="fa fa-heart color_dark_dark_blue heart_none" aria-hidden="true"></i>
+                    </div>
+                    <div id="4com6_like_num" class="comment__quantity">5</div>
+                  </div>
+                  </div>
+                <div class="comment__content">Очень жаль, но не очень</div>
+              </div>
+            </div>
+          </div>
+          <div id="4modal__foto_right_my_comment_hyi" class="modal__foto_right_my_comment dark_dark_blue_border_top">
+            <div class="modal__foto_r_m_c_link_ava">
+              <a class="my_comment__ava_link" href="">
+                <img class="my_comment__link_img" src="img/ава.jpg" alt="">
+              </a>
+            </div>
+            <div id="4modal__foto_right_my_comment_one" class="my_comment__container color_dark_dark_blue" onclick="OpenComForm('4modal__foto_right_my_comment_two', '4modal__foto_right_my_comment_hyi')">
+              Оставить комментарий
+            </div>
+          </div>
+          <div id="4modal__foto_right_my_comment_two" class="modal__foto_right_my_comment_write dark_dark_blue_border_top">
+            <div class="modal__foto_right_my_comment_write_top mid_blue">
+              <div class="modal__foto_right_my_comment_write_t_l background-color_dark_dark_blue">
+                <div class="my_comment_write_ava">
+                  <a class="my_comment_write_ava_link" href="">
+                    <img class="my_comment_write_ava_img" src="img/ава.jpg" alt="">
+                  </a>
+                </div>
+                <div class="my_comment_write_smile">
+                  <i class="fas fa-dizzy mid_blue_color"></i>
+                </div>
+                <div class="my_comment_write_skrepka">
+                  <i class="fa fa-paperclip mid_blue_color" aria-hidden="true"></i>
+                </div>
+              </div>
+              <div class="modal__foto_right_my_comment_write_t_r">
+                <div class="modal__foto_right_my_comment_write_t_r_two">
+                  <div contenteditable="true" class="my_comment__write_my_comment color_dark_dark_blue" data-simplebar>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal__foto_right_my_comment_write_bottom background-color_dark_dark_blue">
+              <button id="4my_comment_write_btn_cancel" class="my_comment_write_btn_cancel mid_blue" onclick="CloseComForm('4modal__foto_right_my_comment_two', '3modal__foto_right_my_comment_hyi')" >Отменить</button>
+              <button class="my_comment_write_btn_send mid_blue">Отправить</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a class="prev" onclick="minusSlides()">&#10094;</a>
+    <a class="next" onclick="plusSlides()">&#10095;</a>
   </div>
 <script src="https://code.jquery.com/jquery-3.6.0.min.js"
     integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
