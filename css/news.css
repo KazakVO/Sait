@@ -300,3 +300,160 @@ input {outline:none;}
 .news__post_c_img{
     margin-right: 5px;
 }
+.news__col_rep_all{
+    cursor: pointer;
+}
+
+.repostAll__tooltop{
+    position: absolute;
+    transition: display .3s ease-in-out;
+    right: 3%;
+    z-index: 15;
+    border-radius: 12px;
+    top: 310px;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 10px;
+    display: none;
+}
+.repostAll__tooltop_active{
+    display: block;
+}
+.repostAll__tooltip_comtainer{
+    display: flex;
+    padding-bottom: 2px;
+    margin-top: 2px;
+}
+.repostAll__tooltip_link{
+    padding-bottom: 2px;
+}
+.repostAll__tooltip_comtainer:hover,
+.repostAll__tooltip_link:hover{
+    padding-bottom: 0px;
+}
+  
+.repostAll__tooltip_r_c_l{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+}
+.repostAll__ava_link{
+    width: 40px;
+    height: 40px;
+}
+.repostAll__link_img{
+    width: 36px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 50px;
+}
+.repostAll__name_polit{
+    display: flex;
+}
+.repostAll__name_link{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: white;
+}
+.repostAll__polit_img{
+    width: 22px;
+    height: 22px;
+    margin-top: 6px;
+}
+.repostAll__tooltip_title{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 13px;
+    text-align: center;
+}
+.repostAll__tooltip_link_c{
+    text-align: center;
+    padding-top: 3px;
+}
+.repostAll__tooltip_link{
+    display: block;
+    padding-top: 13px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+}
+
+/* ВСПЛАВАЮЩИЕ РЕПОСТНУВШИЕ */
+
+.news_circle__tooltop{
+    position: fixed;
+    transition: display .3s ease-in-out;
+    left: 68%;
+    top: 37%;
+    z-index: 15;
+    border-radius: 12px;
+    min-width: 250px;
+    max-width: 350px;
+    padding: 10px;
+    display: none;
+  }
+  .news_circle__tooltop_active{
+    display: block;
+  }
+  .news_circle__tooltip_comtainer{
+    display: flex;
+    padding-bottom: 2px;
+    margin-top: 2px;
+  }
+  .news_circle__tooltip_link{
+    padding-bottom: 2px;
+  }
+  .news_circle__tooltip_comtainer:hover,
+  .news_circle__tooltip_link:hover{
+    padding-bottom: 0px;
+  }
+  
+  .news_circle__tooltip_r_c_l{
+    width: 40px;
+    height: 40px;
+    margin-right: 5px;
+  }
+  .news_circle__ava_link{
+    width: 40px;
+    height: 40px;
+  }
+  .news_circle__link_img{
+    width: 36px;
+    height: 36px;
+    border: 1px solid black;
+    border-radius: 50px;
+  }
+  .news_circle__name_polit{
+    display: flex;
+  }
+  .news_circle__name_link{
+    font-size: 14px;
+    margin-top: 10px;
+    margin-right: 5px;
+    margin-bottom: 10px;
+    color: white;
+  }
+  .news_circle__polit_img{
+    width: 22px;
+    height: 22px;
+    margin-top: 6px;
+  }
+  .news_circle__tooltip_title{
+    font-size: 14px;
+    color: white;
+    margin-bottom: 13px;
+    text-align: center;
+  }
+  .news_circle__tooltip_link_c{
+    text-align: center;
+    padding-top: 3px;
+  }
+  .news_circle__tooltip_link{
+    display: block;
+    padding-top: 13px;
+    font-size: 14px;
+    color: white;
+    text-align: center;
+  }
