@@ -83,6 +83,7 @@
                         </div>
                     </div>
                 </div>
+
                 <div class="news__post light_yellow">
                     <div class="news__post_flex">
                         <div class="news__post_blok">
@@ -100,9 +101,7 @@
                         </div>
                     </div>
                     <div class="news__post_p">
-                        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia f f f f f  g g g g g repellendus
-                        quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
-                        expedita numquam eum voluptatum aliquam.
+                        html и css не единственные как бы, прост изучи че-то новое, например c++ и уже норм
                     </div>
                     <div class="news__post_lkr">
                         <!-- Лайки -->
@@ -122,12 +121,12 @@
                             <button class="news__post_r_img">
                                 <i class="fa fa-arrow-circle-o-right color_dark_dark_yellow fa-2x" aria-hidden="true"></i>
                             </button>
-                            <div id="1_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="ShowReps('1_news_repost')">746</div>
+                            <div id="1_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="repost('1_news_repost')">746</div>
                             <div class="news__col_rep_ally">36</div>
                             <div class="news__col_rep_enemy">12</div>
                         </div>
                         <!-- Появляющийся список репостнувших -->
-                            <div id="1_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow">
+                            <div id="1_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow jsrepost">
                               <div class="news_circle__tooltip_title">Список репостов</div>
                               <div class="news_circle__tooltip_comtainer mid_yellow_border_bottom_hover">
                                 <div class="news_circle__tooltip_r_c_l">
@@ -190,63 +189,128 @@
                           </div>
                           <!-- Комментарии -->
                           <div class="news__post_c">
-                              <button class="news__post_c_img">
+                              <button class="news__post_c_img" type="button"   onclick="fun__but('comentadd')">
                                 <i class="fa fa-comments-o color_dark_dark_yellow fa-2x" aria-hidden="true"></i>
                               </button>
                               <div class="news__col_com_all">57</div>
                               <div class="news__col_com_ally">257</div>
                               <div class="news__col_com_enemy">57</div>
                           </div>
-                          <!-- Добавление комментария onclick="f()" -->
-                        <div class="news__post_k">
-                            <button class="news__post_k_img" type="button"   onclick="fun__but('comentadd')">
-                                <i class="fa fa-commenting-o color_dark_dark_yellow fa-2x aria-hidden="true"></i>
-                            </button>
-                        </div>
+
                         <div class="news__post_r">
                         </div>
                     </div>
+
+                    <!-- ПОЯВЛЯЮЩИЕСЯ КОММЕНТЫ -->
                     <div id="comentadd" style="display: none">
-                        <div class="my_pad light_yellow">
-                            <div class="news__post_flex">
-                                <div class="news__post_blok">
-                                    <div>
-                                        <img class="news__post_ava" src="img/123.png" alt="">
-                                    </div>
-                                </div>
-                                <div>
-                                    <div class="news__post_gryp_name">
-                                        Группа
-                                    </div>
-                                    <div class="news__post_gryp_time">
-                                        4:20
-                                    </div>
-                                </div>
+                      <div class="news_modal__foto_right_comment_container background-color_dark_dark_yellow_scroll" data-simplebar id="coms">
+                        <div class="news_modal__foto_right_comment dark_yellow_border_bottom" id="com1">
+                          <div class="news_modal__foto_r_c_l">
+                            <a class="news_comment_ava_link" href="">
+                              <img class="news_comment_link_img" src="img/артем.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="news_modal__foto_r_c_r">
+                            <div class="news_comment__name_polit">
+                              <a class="news_comment__name_link" href="">Шашлычков Герман</a>
+                              <img class="news_comment__polit_img" src="img/намаз.jpg" alt="">
                             </div>
-                            <form>
-                                <div>
-                                    <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
-                                        placeholder="Что у вас нового?"></textarea>
+                            <div class="news_comment__all_infa">
+                              <div class="news_comment__date">26 фев 1947</div>
+                              <div class="news_comment__icons">
+                                <div class="news_comment__plus">
+                                  <i class="fa fa-commenting-o color_dark_dark_yellow" aria-hidden="true"></i>
                                 </div>
-                                <div class="div_btn">
-                                    <button type="submit" onclick="fun__but('comentadd')"
-                                        class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                                <div id="com1_like_on" onclick="LikePlus('com1_like_on', 'com1_like_off', 'com1_like_num')" class="comment__heart">
+                                  <i class="fa fa-heart-o color_dark_dark_yellow" aria-hidden="true"></i>
                                 </div>
-                            </form>
+                                <div id="com1_like_off" onclick="LikeMinus('com1_like_on', 'com1_like_off', 'com1_like_num')" class="comment__heart_bac heart_none">
+                                  <i class="fa fa-heart color_dark_dark_yellow heart_none" aria-hidden="true"></i>
+                                </div>
+                                <div id="com1_like_num" class="comment__quantity">5</div>
+                              </div>
+                            </div>
+                            <div class="news_comment__content">Был ужален сам, но мне ни жаль ужаленных ни капли трололололололололололололололололололололололол Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni soluta consequuntur ipsum neque voluptate ex eum sed, vitae molestias corporis optio architecto aut reprehenderit! Non perferendis eaque facere obcaecati ipsa!</div>
+                          </div>
                         </div>
+                        <div class="news_modal__foto_right_comment dark_yellow_border_bottom" id="com2">
+                          <div class="news_modal__foto_r_c_l">
+                            <a class="news_comment_ava_link" href="">
+                              <img class="news_comment_link_img" src="img/ава.jpg" alt="">
+                            </a>
+                          </div>
+                          <div class="news_modal__foto_r_c_r">
+                            <div class="news_comment__name_polit">
+                              <a class="news_comment__name_link" href="">Коза Виктория</a>
+                              <img class="news_comment__polit_img" src="img/намаз.jpg" alt="">
+                            </div>
+                            <div class="news_comment__all_infa">
+                              <div class="news_comment__date">27 фев 1947</div>
+                              <div class="news_comment__icons">
+                                <div class="news_comment__pencil">
+                                  <i class="fa fa-pencil color_dark_dark_yellow" aria-hidden="true"></i>
+                                </div>
+                                <div class="news_comment__minus" onclick="DeleteCom('com2')">
+                                  <i class="fa fa-trash-o color_dark_dark_yellow" aria-hidden="true"></i>
+                                </div>
+                                <div class="news_comment__plus">
+                                  <i class="fa fa-commenting-o color_dark_dark_yellow" aria-hidden="true"></i>
+                                </div>
+                                <div id="com2_like_on" onclick="LikePlus('com2_like_on', 'com2_like_off', 'com2_like_num')" class="comment__heart">
+                                  <i class="fa fa-heart-o color_dark_dark_yellow" aria-hidden="true"></i>
+                                </div>
+                                <div id="com2_like_off" onclick="LikeMinus('com2_like_on', 'com2_like_off', 'com2_like_num')" class="comment__heart_bac heart_none">
+                                  <i class="fa fa-heart color_dark_dark_yellow heart_none" aria-hidden="true"></i>
+                                </div>
+                                <div id="com2_like_num" class="comment__quantity">56</div>
+                              </div>
+                              </div>
+                            <div class="news_comment__content">Очень жаль, но не очень</div>
+                          </div>
+                        </div>
+                      </div>
                     </div>
+                    <!-- <div id="comentadd" style="display: none">
+                      <div class="my_pad light_yellow">
+                          <div class="news__post_flex">
+                              <div class="news__post_blok">
+                                  <div>
+                                      <img class="news__post_ava" src="img/123.png" alt="">
+                                  </div>
+                              </div>
+                              <div>
+                                  <div class="news__post_gryp_name">
+                                      Группа
+                                  </div>
+                                  <div class="news__post_gryp_time">
+                                      4:20
+                                  </div>
+                              </div>
+                          </div>
+                          <form>
+                              <div>
+                                  <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
+                                      placeholder="Что у вас нового?"></textarea>
+                              </div>
+                              <div class="div_btn">
+                                  <button type="submit" onclick="fun__but('comentadd')"
+                                      class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
+                              </div>
+                          </form>
+                      </div>
+                  </div> -->
                     
                 </div>
                 <div class="news__post light_yellow">
                   <div class="news__post_flex">
                       <div class="news__post_blok">
                           <div>
-                              <img class="news__post_ava" src="img/123.png" alt="">
+                              <img class="news__post_ava" src="img/котиутка.jpg" alt="">
                           </div>
                       </div>
                       <div>
                           <div class="news__post_gryp_name">
-                              Группа
+                              Любители JS
                           </div>
                           <div class="news__post_gryp_time">
                               4:20
@@ -254,9 +318,7 @@
                       </div>
                   </div>
                   <div class="news__post_p">
-                      Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia f f f f f  g g g g g repellendus
-                      quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
-                      expedita numquam eum voluptatum aliquam.
+                    Евреи долго думали, кто же мешает им хорошо жить. Они называли всех, и американцев, и русских, и арабов, но крайней оказалась плоть.
                   </div>
                   <div class="news__post_lkr">
                       <!-- Лайки -->
@@ -276,12 +338,12 @@
                           <button class="news__post_r_img">
                               <i class="fa fa-arrow-circle-o-right color_dark_dark_yellow fa-2x" aria-hidden="true"></i>
                           </button>
-                          <div id="2_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="ShowReps('2_news_repost')">746</div>
+                          <div id="2_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="repost('2_news_repost')">746</div>
                           <div class="news__col_rep_ally">36</div>
                           <div class="news__col_rep_enemy">12</div>
                       </div>
                       <!-- Появляющийся список репостнувших -->
-                          <div id="2_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow">
+                          <div id="2_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow jsrepost">
                             <div class="news_circle__tooltip_title">Список репостов 2</div>
                             <div class="news_circle__tooltip_comtainer mid_yellow_border_bottom_hover">
                               <div class="news_circle__tooltip_r_c_l">
@@ -395,12 +457,12 @@
                 <div class="news__post_flex">
                     <div class="news__post_blok">
                         <div>
-                            <img class="news__post_ava" src="img/123.png" alt="">
+                            <img class="news__post_ava" src="img/C.jpg" alt="">
                         </div>
                     </div>
                     <div>
                         <div class="news__post_gryp_name">
-                            Группа
+                            Клуб магов
                         </div>
                         <div class="news__post_gryp_time">
                             4:20
@@ -408,9 +470,7 @@
                     </div>
                 </div>
                 <div class="news__post_p">
-                    Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia f f f f f  g g g g g repellendus
-                    quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
-                    expedita numquam eum voluptatum aliquam.
+                    Как сделать фон на сайте зеркальным, что бы пользователь, когда заходил, видел свое отражение??
                 </div>
                 <div class="news__post_lkr">
                     <!-- Лайки -->
@@ -430,12 +490,12 @@
                         <button class="news__post_r_img">
                             <i class="fa fa-arrow-circle-o-right color_dark_dark_yellow fa-2x" aria-hidden="true"></i>
                         </button>
-                        <div id="3_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="ShowReps('3_news_repost')">746</div>
+                        <div id="3_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="repost('3_news_repost')">746</div>
                         <div class="news__col_rep_ally">36</div>
                         <div class="news__col_rep_enemy">12</div>
                     </div>
                     <!-- Появляющийся список репостнувших -->
-                        <div id="3_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow">
+                        <div id="3_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow jsrepost">
                           <div class="news_circle__tooltip_title">Список репостов 3</div>
                           <div class="news_circle__tooltip_comtainer mid_yellow_border_bottom_hover">
                             <div class="news_circle__tooltip_r_c_l">
@@ -549,12 +609,12 @@
               <div class="news__post_flex">
                   <div class="news__post_blok">
                       <div>
-                          <img class="news__post_ava" src="img/123.png" alt="">
+                          <img class="news__post_ava" src="img/sobaka.jpg" alt="">
                       </div>
                   </div>
                   <div>
                       <div class="news__post_gryp_name">
-                          Группа
+                          Доставка корейской еды
                       </div>
                       <div class="news__post_gryp_time">
                           4:20
@@ -562,9 +622,7 @@
                   </div>
               </div>
               <div class="news__post_p">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odit non dolor mollitia f f f f f  g g g g g repellendus
-                  quo enim, fugiat voluptates? Enim deleniti unde assumenda eum excepturi. Doloremque delectus
-                  expedita numquam eum voluptatum aliquam.
+                  Сам ты псина
               </div>
               <div class="news__post_lkr">
                   <!-- Лайки -->
@@ -584,12 +642,12 @@
                       <button class="news__post_r_img">
                           <i class="fa fa-arrow-circle-o-right color_dark_dark_yellow fa-2x" aria-hidden="true"></i>
                       </button>
-                      <div id="4_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="ShowReps('4_news_repost')">746</div>
+                      <div id="4_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="repost('4_news_repost')">746</div>
                       <div class="news__col_rep_ally">36</div>
                       <div class="news__col_rep_enemy">12</div>
                   </div>
                   <!-- Появляющийся список репостнувших -->
-                      <div id="4_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow">
+                      <div id="4_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow jsrepost">
                         <div class="news_circle__tooltip_title">Список репостов 4</div>
                         <div class="news_circle__tooltip_comtainer mid_yellow_border_bottom_hover">
                           <div class="news_circle__tooltip_r_c_l">
@@ -703,12 +761,12 @@
                   <div class="news__post_flex">
                       <div class="news__post_blok">
                           <div>
-                              <img class="news__post_ava" src="img/123.png" alt="">
+                              <img class="news__post_ava" src="img/kot.jpg" alt="">
                           </div>
                       </div>
                       <div>
                           <div class="news__post_gryp_name">
-                              Группа
+                              Шаверма
                           </div>
                           <div class="news__post_gryp_time">
                               4:20
@@ -738,12 +796,12 @@
                           <button class="news__post_r_img">
                               <i class="fa fa-arrow-circle-o-right color_dark_dark_yellow fa-2x" aria-hidden="true"></i>
                           </button>
-                          <div id="5_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="ShowReps('5_news_repost')">746</div>
+                          <div id="5_news_rep_all" class="news__col_rep_all dark_dark_yellow_border_bottom_hover" onclick="repost('5_news_repost')">746</div>
                           <div class="news__col_rep_ally">36</div>
                           <div class="news__col_rep_enemy">12</div>
                       </div>
                       <!-- Появляющийся список репостнувших -->
-                          <div id="5_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow">
+                          <div id="5_news_repost" class="news_circle__tooltop background-color_dark_dark_yellow jsrepost">
                             <div class="news_circle__tooltip_title">Список репостов 5</div>
                             <div class="news_circle__tooltip_comtainer mid_yellow_border_bottom_hover">
                               <div class="news_circle__tooltip_r_c_l">
@@ -852,7 +910,7 @@
                       </div>
                   </div>
                   
-                    </div>
+                </div>
             </div>
 
             <div class="rightsitebar ">

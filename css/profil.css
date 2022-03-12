@@ -410,6 +410,7 @@
 .modal__foto_r_r_btn_circle:hover{
   line-height: 28px;
 }
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
 .circle__tooltop{
   position: absolute;
   transition: display .3s ease-in-out;
