@@ -59,3 +59,20 @@ function fun__but_com() {
         text.style.display = "none";
     }
 }
+
+//ОТКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
+function OpenComFormN(ComTwo, ComOld){
+
+    var cOld = document.getElementById(ComOld);
+    var cTwo = document.getElementById(ComTwo);
+    
+    cOld.classList.add('display_none');
+    cTwo.classList.add('news_modal__foto_right_my_comment_write_active');
+    }
+    // ЗАКРЫВАЕМ ФОРМУ С НАПИСАНИЕМ КОМЕНТА
+    function CloseComFormN(ComTwo, ComOld){
+    var cOld = document.getElementById(ComOld);
+    var cTwo = document.getElementById(ComTwo);
+    cOld.classList.remove('display_none');
+    cTwo.classList.remove('news_modal__foto_right_my_comment_write_active');
+    }

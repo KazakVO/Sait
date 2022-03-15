@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>news</title>
     <link rel="stylesheet" href="css/news.css">
-    <link rel="stylesheet" href="css/profil.css">
+    <!-- <link rel="stylesheet" href="css/profil.css"> -->
     <link rel="stylesheet" href="css/colors.css">
     <link rel="stylesheet" href="css/header_leftbar.css">
     <link rel="stylesheet" href="css/login.css">
@@ -18,6 +18,11 @@
     <link rel="stylesheet" href="font-awesome/font-awesome/css/fontawesome.css">
     <link rel="stylesheet" href="font-awesome/font-awesome/css/all.min.css">
     <link rel="stylesheet" href="font-awesome/font-awesome/css/v4-shims.min.css">
+    <link
+    rel="stylesheet"
+    href="https://unpkg.com/simplebar@latest/dist/simplebar.css"
+  />
+  <script src="https://unpkg.com/simplebar@latest/dist/simplebar.min.js"></script>
 </head>
 
 <body>
@@ -204,7 +209,7 @@
                     <!-- ПОЯВЛЯЮЩИЕСЯ КОММЕНТЫ -->
                     <div id="comentadd" style="display: none">
                       <div class="news_modal__foto_right_comment_container background-color_dark_dark_yellow_scroll" data-simplebar id="coms">
-                        <div class="news_modal__foto_right_comment dark_yellow_border_bottom" id="com1">
+                        <div class="news_modal__foto_right_comment dark_yellow_border_bottom dark_dark_yellow_border_top" id="com1">
                           <div class="news_modal__foto_r_c_l">
                             <a class="news_comment_ava_link" href="">
                               <img class="news_comment_link_img" src="img/артем.jpg" alt="">
@@ -265,40 +270,53 @@
                                 <div id="com2_like_num" class="comment__quantity">56</div>
                               </div>
                               </div>
-                            <div class="news_comment__content">Очень жаль, но не очень</div>
+                            <div class="news_comment__content">Очень жаль, но не очень Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus repellendus voluptates architecto voluptatem animi labore sed modi dolorum blanditiis, quisquam nostrum assumenda officia accusamus, sapiente deleniti nihil ducimus ex neque?</div>
                           </div>
+                        </div>
+                        
+                      </div>
+                      <!-- НАПИСАНИЕ СВОЕГО КОМЕНТА -->
+                      <div id="modal__foto_right_my_comment_hyi" class="news_modal__foto_right_my_comment dark_dark_yellow_border_top">
+                        <div class="news_modal__foto_r_m_c_link_ava">
+                          <a class="news_my_comment__ava_link" href="">
+                            <img class="news_my_comment__link_img" src="img/ава.jpg" alt="">
+                          </a>
+                        </div>
+                        <div id="news_modal__foto_right_my_comment_one" class="news_my_comment__container color_dark_dark_yellow" onclick="OpenComFormN('modal__foto_right_my_comment_two', 'modal__foto_right_my_comment_hyi')">
+                          Оставить комментарий
+                        </div>
+                      </div>
+                      <div id="modal__foto_right_my_comment_two" class="news_modal__foto_right_my_comment_write dark_dark_yellow_border_top">
+                        <div class="news_modal__foto_right_my_comment_write_top mid_yellow">
+                          <div class="news_modal__foto_right_my_comment_write_t_l background-color_dark_dark_yellow">
+                            <div class="news_my_comment_write_ava">
+                              <a class="news_my_comment_write_ava_link" href="">
+                                <img class="news_my_comment_write_ava_img" src="img/ава.jpg" alt="">
+                              </a>
+                            </div>
+                          </div>
+                          <div class="news_modal__foto_right_my_comment_write_t_r">
+                            <div class="news_modal__foto_right_my_comment_write_t_r_two">
+                              <div contenteditable="true" class="news_my_comment__write_my_comment color_dark_dark_yellow" data-simplebar>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="news_my_comment_write_emoj background-color_dark_dark_yellow">
+                            <div class="news_my_comment_write_smile">
+                              <i class="fas fa-dizzy mid_yellow_color"></i>
+                            </div>
+                            <div class="news_my_comment_write_skrepka">
+                              <i class="fa fa-paperclip mid_yellow_color" aria-hidden="true"></i>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="news_modal__foto_right_my_comment_write_bottom background-color_dark_dark_yellow">
+                          <button id="my_comment_write_btn_cancel" class="news_my_comment_write_btn_cancel mid_yellow" onclick="CloseComFormN('modal__foto_right_my_comment_two', 'modal__foto_right_my_comment_hyi')" >Отменить</button>
+                          <button class="news_my_comment_write_btn_send mid_yellow">Отправить</button>
                         </div>
                       </div>
                     </div>
-                    <!-- <div id="comentadd" style="display: none">
-                      <div class="my_pad light_yellow">
-                          <div class="news__post_flex">
-                              <div class="news__post_blok">
-                                  <div>
-                                      <img class="news__post_ava" src="img/123.png" alt="">
-                                  </div>
-                              </div>
-                              <div>
-                                  <div class="news__post_gryp_name">
-                                      Группа
-                                  </div>
-                                  <div class="news__post_gryp_time">
-                                      4:20
-                                  </div>
-                              </div>
-                          </div>
-                          <form>
-                              <div>
-                                  <textarea cols="50" rows="10" class="forinput_or_textarea light_yellow"
-                                      placeholder="Что у вас нового?"></textarea>
-                              </div>
-                              <div class="div_btn">
-                                  <button type="submit" onclick="fun__but('comentadd')"
-                                      class="btn btn-default my_btn_yellow light_yellow dark_yellow">Выложить</button>
-                              </div>
-                          </form>
-                      </div>
-                  </div> -->
+
                     
                 </div>
                 <div class="news__post light_yellow">
